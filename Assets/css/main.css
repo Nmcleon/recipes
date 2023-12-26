@@ -1,16 +1,65 @@
-body {
-  font-family: Arial, sans-serif;
+* {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
   margin: 0;
   padding: 0;
+}
+
+body {
   background-color: hsl(220, 4%, 28%);
 }
 
+/* =====navbar===== */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: none;
+  z-index: 1000;
+  transition: 0.5s;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 100px 20px 100px;
+  transition: 0.5s;
+}
+
+header nav.scrolled {
+  background-color: #000000;
+  padding: 5px 100px 5px 100px;
+}
+
+header nav.scrolled .logo,
+header nav.scrolled ul li a {
+  color: #ffffff;
+}
+
+header nav .logo {
+  padding: 0 0 0 20px;
+  color: #ffffff;
+}
+
+header nav ul li {
+  padding: 0 20px;
+}
+
+header nav ul li a {
+  color: #ffffff;
+  display: flex;
+  flex: content;
+  justify-content: center;
+  align-items: center;
+}
+
 .backgroundimage {
-  background-image: url("./images/23-min.jpg");
+  background-image: url("/Assets/images/23-min.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
-
   max-width: 10000px;
 }
 
@@ -21,7 +70,8 @@ body {
   padding: 20px;
 }
 
-h1 {
+.container h1 {
+  margin-top: 100px;
   text-align: center;
   margin-bottom: 20px;
   color: rgb(219, 88, 88);
@@ -31,7 +81,7 @@ h1 {
 }
 
 p {
-  font-family: "Playfair Display", serif !important;
+  /* font-family: "Playfair Display", serif !important; */
   font-size: 20px;
 }
 
