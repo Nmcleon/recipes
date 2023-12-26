@@ -9,6 +9,64 @@ body {
   background-color: hsl(220, 4%, 28%);
 }
 
+/* =====typography===== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: #9bb8cd;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+h5 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+h6 {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+
 /* =====navbar===== */
 header {
   position: fixed;
@@ -74,7 +132,7 @@ header nav ul li a {
   margin-top: 100px;
   text-align: center;
   margin-bottom: 20px;
-  color: rgb(219, 88, 88);
+  color: #0174be;
   font-size: 60px;
   font-weight: 700;
   font-family: "Playfair Display";
@@ -83,6 +141,7 @@ header nav ul li a {
 p {
   /* font-family: "Playfair Display", serif !important; */
   font-size: 20px;
+  color: #9bb8cd;
 }
 
 .intro {
@@ -130,10 +189,12 @@ p {
   z-index: 1;
   padding: 0.7em 1.7em;
   font-size: 18px;
-  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
-  border: 1px solid #e8e8e8;
-  background-color: #3498db;
-  color: #fff;
+  border: 2px solid hsl(50, 91%, 60%);
+  background-color: #f4ce14;
+  box-shadow: 3px 3px 6px #c5c5c5, -3px -3px 6px #f4ce14;
+
+  color: #000000;
+  font-weight: 600;
   text-decoration: none;
   border-radius: 0.5em;
   transition: background-color 0.3s;
@@ -141,7 +202,7 @@ p {
 
 .recipe-link:active {
   color: #666;
-  box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #f4ce14;
 }
 
 .recipe-link:before {
@@ -167,7 +228,7 @@ p {
   top: 180%;
   width: 160%;
   height: 190%;
-  background-color: #009087;
+  background-color: #495e57;
   border-radius: 50%;
   display: block;
   transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
@@ -176,7 +237,7 @@ p {
 
 .recipe-link:hover {
   color: #ffffff;
-  border: 1px solid #009087;
+  border: 1px solid #495e57;
 }
 
 .recipe-link:hover:before {
