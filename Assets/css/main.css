@@ -420,7 +420,7 @@ footer {
 }
 
 footer .footer-container .row {
-  padding-top: 25px;
+  padding-top: 30px;
 }
 
 footer .footer-container h2 {
@@ -534,6 +534,10 @@ footer .footer-container hr {
 }
 
 footer .footer-container .row.copyright {
+  padding: 0;
+}
+
+footer .footer-container .row .copyright {
   display: flex;
   flex: content;
   flex-direction: row;
@@ -541,18 +545,19 @@ footer .footer-container .row.copyright {
   font-size: smaller;
 }
 
-footer .footer-container .row.copyright .company,
-footer .footer-container .row.copyright .authors {
+footer .footer-container .row .copyright .company p,
+footer .footer-container .row .copyright .authors {
   font-size: smaller;
 }
 
-footer .footer-container .row.copyright .authors {
+footer .footer-container .row .copyright .authors {
   display: flex;
   justify-content: flex-end;
   gap: 10px;
+  color: var(--alt-text-color);
 }
 
-footer .footer-container .row.copyright .authors a {
+footer .footer-container .row .copyright .authors a {
   text-decoration: none;
   color: var(--alt-text-color);
 }
