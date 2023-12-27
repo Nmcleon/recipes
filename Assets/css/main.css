@@ -545,19 +545,65 @@ footer .footer-container .row .copyright {
   font-size: smaller;
 }
 
-footer .footer-container .row .copyright .company p,
-footer .footer-container .row .copyright .authors {
+footer .footer-container .row .copyright .company p {
   font-size: smaller;
 }
 
+/* author tooltip */
+
 footer .footer-container .row .copyright .authors {
-  display: flex;
-  justify-content: flex-end;
-  gap: 10px;
-  color: var(--alt-text-color);
+  font-size: smaller;
+  color: var(--primary-color);
 }
 
 footer .footer-container .row .copyright .authors a {
   text-decoration: none;
-  color: var(--alt-text-color);
+  color: var(--primary-color);
 }
+
+footer .footer-container .row .copyright .authors .author-tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+footer
+  .footer-container
+  .row
+  .copyright
+  .authors
+  .author-tooltip
+  .tooltip-text {
+  visibility: hidden;
+  width: 100px;
+  background-color: var(--main-background-color);
+  color: var(--secondary-color);
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 120%;
+  left: 125%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+footer .footer-container .row .authors .author-tooltip .tooltip-text::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: var(--dark-background-color) transparent transparent transparent;
+}
+
+footer .footer-container .row .authors .author-tooltip:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+  cursor: pointer;
+}
+
+/* =====responsive===== */
