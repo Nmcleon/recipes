@@ -342,93 +342,10 @@ p {
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
 }
 
-/* for all social containers*/
-.socialContainer {
-  width: 52px;
-  height: 52px;
-  background-color: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  transition-duration: 0.3s;
-}
-/* instagram*/
-.containerOne:hover {
-  background-color: #d62976;
-  transition-duration: 0.3s;
-}
-/* twitter*/
-.containerTwo:hover {
-  background-color: #00acee;
-  transition-duration: 0.3s;
-}
-/* linkdin*/
-.containerThree:hover {
-  background-color: #0072b1;
-  transition-duration: 0.3s;
-}
-/* Whatsapp*/
-.containerFour:hover {
-  background-color: #128c7e;
-  transition-duration: 0.3s;
-}
-
-.socialContainer:active {
-  transform: scale(0.9);
-  transition-duration: 0.3s;
-}
-
-.socialSvg {
-  width: 17px;
-}
-
-.socialSvg path {
-  fill: rgb(255, 255, 255);
-}
-
-.socialContainer:hover .socialSvg {
-  animation: slide-in-top 0.3s both;
-}
-
-@keyframes slide-in-top {
-  0% {
-    transform: translateY(-50px);
-    opacity: 0;
-  }
-
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
 /*header*/
 .header {
   height: 1px;
 }
-/* ul {
-  display: flex;
-  justify-content: flex-end;
-  padding: 0;
-  float: right;
-  list-style-type: none;
-  margin-top: 20px;
-  min-height: 4px;
-  margin-right: 0;
-  font-size: 17px;
-}
-
-ul li {
-  display: inline-block;
-}
-
-ul li a {
-  text-decoration: none;
-  color: #292929;
-  padding: 5px 20px;
-  border: ipx solid transparent;
-  transition: 0.5 ease;
-} */
 
 ul li a:hover {
   background-color: rgb(219, 88, 88);
@@ -446,48 +363,119 @@ ul li a:hover {
   margin: auto;
 }
 
-/*footer*/
+/*===== footer =====*/
 
 footer {
+  background-color: #000000;
   position: relative;
+  bottom: 0;
   width: 100%;
-  height: auto;
-  padding: 50px 0;
-  background: #111;
+  height: 300px;
+}
+
+footer .footer-container row {
+  gap: 20px;
+}
+
+footer .footer-container h2 {
+  font-size: 1.5rem;
+}
+
+footer .footer-container .about-us p {
+  font-size: smaller;
+  color: #ffffff;
+  text-align: justify;
+  padding: 0 20px 0 0;
+}
+
+footer .footer-container ul.footer-links {
+  list-style: none;
+  text-decoration: none;
+  padding-left: 0px;
+}
+
+footer .footer-container ul.footer-links li a {
+  color: #ffffff;
+  font-size: small;
+}
+
+footer .footer-container .row div:nth-child(3) h2 {
+  text-align: center;
+}
+
+footer .footer-container .social-icons {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  flex: content;
+  justify-content: center;
+  gap: 20px;
+  /* padding-left: 0px; */
 }
 
-.f_container {
-  width: 100%;
+footer .footer-container .social-icons .socialContainer {
+  border-radius: 50%;
+}
+
+/* for all social containers*/
+footer .footer-container .social-icons .socialContainer {
+  width: 52px;
+  height: 52px;
+  background-color: none;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: 0.3s;
 }
 
-.about-us {
-  width: 40%;
+/* instagram*/
+footer .footer-container .social-icons .containerOne:hover {
+  background-color: #e4405f;
+  transition-duration: 0.3s;
 }
 
-footer .f_container .about-us h2 {
-  position: relative;
-  color: #fff;
-  font-weight: 500;
-  margin-bottom: 15px;
+/* twitter*/
+footer .footer-container .social-icons .containerTwo:hover {
+  background-color: #1da1f2;
+  transition-duration: 0.3s;
 }
 
-footer .f_container h2:before {
-  content: "";
-  position: absolute;
-  bottom: -5px;
-  left: 0;
-  width: 50px;
-  height: 2px;
-  /*background: #f00;*/
+/* linkedin*/
+footer .footer-container .social-icons .containerThree:hover {
+  background-color: #0077b5;
+  transition-duration: 0.3s;
 }
 
-footer p {
-  color: #999;
+/* Whatsapp*/
+footer .footer-container .social-icons .containerFour:hover {
+  background-color: #25d366;
+  transition-duration: 0.3s;
+}
+
+footer .footer-container .social-icons .socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: 0.3s;
+}
+
+footer .footer-container .social-icons .socialSvg {
+  width: 17px;
+}
+
+footer .footer-container .social-icons .socialSvg path {
+  fill: rgb(255, 255, 255);
+}
+
+footer .footer-container .social-icons .socialContainer:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
