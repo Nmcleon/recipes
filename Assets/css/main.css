@@ -87,31 +87,97 @@ header nav {
 }
 
 header nav.scrolled {
-  background-color: #000000;
+  background-color: #ffffff;
   padding: 5px 100px 5px 100px;
 }
 
 header nav.scrolled .logo,
-header nav.scrolled ul li a {
-  color: #ffffff;
+header nav.scrolled .menu-items a {
+  color: #000000;
 }
 
 header nav .logo {
   padding: 0 0 0 20px;
-  color: #ffffff;
+  color: #000000;
 }
 
-header nav ul li {
-  padding: 0 20px;
-}
+/* menu */
 
-header nav ul li a {
-  color: #ffffff;
+header nav .menu-items {
   display: flex;
-  flex: content;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
 }
+
+header nav .menu-items a {
+  color: #ffffff;
+  text-decoration: none;
+  list-style: none;
+  padding: 0 20px;
+  font-weight: 600;
+}
+
+/* ===buttons=== */
+
+/* search */
+header nav .nav-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+header nav .nav-buttons .search {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+}
+
+header nav.scrolled .nav-buttons .search {
+  color: #000000;
+  border: none;
+  border-radius: 50%;
+}
+
+/* language selector button */
+
+header nav .nav-buttons .language-selector {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+}
+header nav .nav-buttons .language-selector select {
+  border: none;
+  text-decoration: none;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  background: transparent;
+  font-weight: 600;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+header nav .nav-buttons .language-selector select > datalist {
+  background-color: transparent;
+}
+
+header nav .nav-buttons .language-selector select option {
+  color: #000000;
+  font-size: small;
+  font-weight: 600;
+  background: transparent;
+}
+
+/* =====hero image===== */
 
 .backgroundimage {
   background-image: url("/Assets/images/23-min.jpg");
@@ -340,11 +406,11 @@ p {
 .header {
   height: 1px;
 }
-ul {
+/* ul {
   display: flex;
   justify-content: flex-end;
   padding: 0;
-  /*float: right;*/
+  float: right;
   list-style-type: none;
   margin-top: 20px;
   min-height: 4px;
@@ -362,7 +428,7 @@ ul li a {
   padding: 5px 20px;
   border: ipx solid transparent;
   transition: 0.5 ease;
-}
+} */
 
 ul li a:hover {
   background-color: rgb(219, 88, 88);
