@@ -105,7 +105,7 @@ header nav {
 }
 
 header nav.scrolled {
-  background-color: var(--light-background-color);
+  background-color: var(--main-background-color);
   padding: 5px 100px 5px 100px;
 }
 
@@ -147,16 +147,23 @@ header nav .nav-buttons {
   gap: 10px;
 }
 
+header nav .nav-buttons button {
+  border: none;
+  outline: none;
+}
+
 header nav .nav-buttons .search {
   color: var(--primary-color);
-  border: 1px solid var(--primary-color);
+  background: none;
   border-radius: 50%;
   width: 25px;
   height: 25px;
+  outline: none;
 }
 
 header nav.scrolled .nav-buttons .search {
-  color: var(--secondary-color);
+  color: var(--secondary-color) !important;
+  background-color: transparent;
   border: none;
   border-radius: 50%;
 }
@@ -165,7 +172,7 @@ header nav.scrolled .nav-buttons .search {
 
 header nav .nav-buttons .language-selector {
   color: var(--primary-color);
-  border: 1px solid var(--primary-color);
+  background: transparent;
   border-radius: 50%;
   width: 25px;
   height: 25px;
@@ -178,6 +185,7 @@ header nav .nav-buttons .language-selector select {
   height: 25px;
   background: transparent;
   font-weight: 600;
+  color: var(--primary-color);
 
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -189,10 +197,17 @@ header nav .nav-buttons .language-selector select > datalist {
 }
 
 header nav .nav-buttons .language-selector select option {
-  color: var(--secondary-color);
+  color: var(--primary-color);
   font-size: small;
   font-weight: 600;
   background: transparent;
+}
+
+header nav.scrolled .nav-buttons .language-selector {
+  background-color: transparent;
+  color: var(--secondary-color) !important;
+  border: none;
+  outline: none;
 }
 
 /* =====hero image===== */
