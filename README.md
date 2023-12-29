@@ -1,6 +1,10 @@
 # Odin Recipes
 
-<!-- live site : https://onkiaye.github.io/odin-recipes/ {website under works} -->
+<center>
+
+[Version: 1.0](https://onkiaye.github.io/odin-recipes/) | [Version: 2.1](https://nmcleon.github.io/odin-recipes/v2/)
+
+ </center>
 
 This website is home to a collection of delicious recipes, all made with fresh, high-quality ingredients. Whether you're in the mood for something sweet or savory, we have a meal that's perfect for you.
 
@@ -9,35 +13,25 @@ This website is home to a collection of delicious recipes, all made with fresh, 
 <table>
 <tr>
 
-<td>**American Potato Salad*</td>
-<td>🇺🇸 &dash; 🥔🥗</td>
+<td>American Potato Salad</td>
+<td>🇺🇸 🥔🥗</td>
 <td><img src="/Assets/images/AmericanPotatoSalad.webp" width="200" height="100"></td>
 <td>A classic recipe that's perfect for any summer gathering.</td>
 </tr>
 <tr>
 
-<td>**Cherry Cola Ribs**</td>
-<td>🇺🇸 &dash; 🥩🍒🥤</td>
+<td>Cherry Cola Ribs</td>
+<td>🇺🇸 🥩🍒🥤</td>
 <td><img src="/Assets/images/Cherry-Cola-Ribs_Chef-John_4x3.webp" width="200" height="100"></td>
 <td>A sweet and smoky dish that's sure to please everyone at your next barbecue.</td>
 </tr>
 <tr>
-<td>**No-Bake Cheesecake Flag Cake**</td>
-<td>🇺🇸 &dash; 🍰🏳</td>
+<td>No-Bake Cheesecake Flag Cake</td>
+<td>🇺🇸 🍰🏳</td>
 <td><img src="/Assets/images/No-Break_Cheesecake/Flag-Cake-with-Cheesecake-Topping-25-500x500.jpg" width="200" height="100"></td>
 <td>A festive and delicious dessert that's perfect for any occasion.</td>
-
 </tr>
 </table>
-
-- - [Image of American Potato Salad]
--
-
-[Image of Cherry Cola Ribs]
-
-- 🇺🇸 🍰 🏳
-
-![Image of No-Bake Cheesecake Flag Cake!]
 
 ## Ingredients
 
@@ -55,9 +49,9 @@ We also include tips and tricks in our recipes to help you make the best possibl
 
 If you run into any problems while cooking one of our recipes, don't hesitate to contact us. We're always happy to help!
 
-## Enjoy!
+## Enjoy!👩‍🍳👨‍🍳
 
-We hope you enjoy cooking our recipes as much as we enjoy creating them. So fire up your oven, gather your ingredients, and get cooking! 👩‍🍳 👨‍🍳
+We hope you enjoy cooking our recipes as much as we enjoy creating them. So fire up your oven, gather your ingredients, and get cooking!
 
 ### No-Bake Cheesecake Flag Cake
 
@@ -73,5 +67,5 @@ This recipe is for a delicious and festive no-bake cheesecake cake that's perfec
 
 ## Contributors
 
-- Noah Okeyo &mdash; ![@nmcleon](https://github.com/nmcleon)
-- Blain Muema &mdash; ![@octocatblain](https://github.com/octocatblain)
+- Noah Okeyo &mdash; [@nmcleon](https://github.com/nmcleon)
+- Blain Muema &mdash; [@octocatblain](https://github.com/octocatblain)
