@@ -36,7 +36,7 @@ h4,
 h5,
 h6,
 p {
-  color: var(--alt-text-color);
+  color: white;
 }
 
 h1 {
@@ -263,19 +263,23 @@ header nav.scrolled .nav-buttons .language-selector {
   z-index: 1;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
-  height: 200px;
-  opacity: 50%;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  opacity: 20%;
 }
 
 .section-one .container .card .categories p {
+  backdrop-filter: blur(2px);
+  background-color: #00000055;
   width: max-content;
   height: 20px;
-  background-color: var(--alt-text-color);
-  color: var(--secondary-color);
+  /*background-color: var(--alt-text-color);
+  color: var(--secondary-color);*/
   font-size: smaller;
   font-weight: 600;
-  padding: 0 5px;
-  border-radius: 5px;
+  padding: 2px 10px;
+  border-radius: 10px;
   font-style: italic;
 }
 .section-one .row h2 {
@@ -284,7 +288,7 @@ header nav.scrolled .nav-buttons .language-selector {
 
 .section-one .container .row .card {
   background-color: var(--dark-background-color);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6), 0 0 10px rgba(0, 0, 0, 1);
+  /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.6), 0 0 10px rgba(0, 0, 0, 1);*/
   /* background-color: #45474b; */
   width: 300px;
   height: 400px;
