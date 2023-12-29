@@ -25,9 +25,10 @@
 body {
   background-color: var(--main-background-color);
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
-/* =====typography===== */
+/* =====Typography===== */
 
 h1,
 h2,
@@ -105,18 +106,16 @@ header nav {
 }
 
 header nav.scrolled {
-  background-color: var(--main-background-color);
+  background-color: var(--light-background-color);
   padding: 5px 100px 5px 100px;
 }
 
-header nav.scrolled .logo,
 header nav.scrolled .menu-items a {
   color: var(--secondary-color);
 }
 
-header nav .logo {
-  padding: 0 0 0 20px;
-  color: var(--secondary-color);
+header nav .logo img {
+  width: 200px;
 }
 
 /* menu */
@@ -162,7 +161,7 @@ header nav .nav-buttons .search {
 }
 
 header nav.scrolled .nav-buttons .search {
-  color: var(--secondary-color) !important;
+  color: black;
   background-color: transparent;
   border: none;
   border-radius: 50%;
@@ -197,17 +196,22 @@ header nav .nav-buttons .language-selector select > datalist {
 }
 
 header nav .nav-buttons .language-selector select option {
-  color: var(--primary-color);
+  color: var(--secondary-color);
   font-size: small;
   font-weight: 600;
   background: transparent;
+  /* outline: none; */
 }
 
 header nav.scrolled .nav-buttons .language-selector {
   background-color: transparent;
-  color: var(--secondary-color) !important;
+  color: var(--secondary-color);
   border: none;
   outline: none;
+}
+
+header nav.scrolled .nav-buttons .language-selector select {
+  color: var(--secondary-color);
 }
 
 /* =====hero image===== */
@@ -248,36 +252,6 @@ header nav.scrolled .nav-buttons .language-selector {
   margin: 3rem 0;
 }
 
-.section-one .container .card .categories {
-  display: flex !important;
-  justify-content: space-evenly !important;
-  align-items: center;
-  gap: 10px;
-  position: relative;
-  z-index: 999;
-}
-
-.section-one .container .card img {
-  position: absolute;
-  top: 0px;
-  z-index: 1;
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
-  height: 200px;
-  opacity: 50%;
-}
-
-.section-one .container .card .categories p {
-  width: max-content;
-  height: 20px;
-  background-color: var(--alt-text-color);
-  color: var(--secondary-color);
-  font-size: smaller;
-  font-weight: 600;
-  padding: 0 5px;
-  border-radius: 5px;
-  font-style: italic;
-}
 .section-one .row h2 {
   color: var(--text-color);
 }
@@ -291,44 +265,78 @@ header nav.scrolled .nav-buttons .language-selector {
   border: none;
   border-radius: 1rem;
   margin-top: 1.75rem;
-  padding: 20px 20px;
+  padding: 0 20px 20px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  overflow: hidden;
+  transition: transform 200ms ease-in-out;
 }
 
-.section-one .container .row .card .recipe-title {
+.section-one .container .card:hover {
+  transform: translateY(-20px);
+}
+
+.section-one .container .card .card-image {
+  height: 200px;
+  width: 300px;
+  overflow: hidden;
+}
+
+.section-one .container .card .card-image img {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 200ms ease-in;
+}
+
+.section-one .container .card:hover .card-image img {
+  transform: scale(1.2);
+}
+
+.section-one .container .card .categories {
+  position: absolute;
+  display: flex;
+  justify-content: flex-start;
+  gap: 2px;
+  margin: 10px 10px auto 10px;
+}
+
+.section-one .container .card .categories p {
+  width: max-content;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  font-size: smaller;
+  font-weight: 600;
+  padding: 0.1rem 0.5rem;
+  border-radius: 1rem;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.section-one .container .card .card-text {
+  max-height: 200px;
+  /* contain: content; */
+  /* text-align: center; */
+  display: contents;
+  align-content: end;
+  justify-content: end;
+}
+
+.section-one .container .row .card .card-text .recipe-title {
   font-size: 1.25rem;
   font-weight: 400;
-}
-
-.section-one .container .row .card .recipe-description {
-  font-size: 1rem;
+  color: var(--text-color);
   text-align: center;
 }
 
-/* .section-one .container .row .card .recipe-link {
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 50px;
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: var(--secondary-color);
-  text-decoration: none;
-  background-color: var(--btn-color);
-  border: none;
-  border-radius: 5px;
-  outline: none;
-  box-shadow: 3px 3px 10px var(--btn-color), -3px -3px 10px var(--btn-color);
-  transition: background-color 0.3s;
-} */
+.section-one .container .row .card .card-text .recipe-description {
+  font-size: 0.8rem;
+  text-align: center;
+}
 
-.section-one .container .row .card .recipe-link {
+.section-one .container .row .card .card-text .recipe-link {
   position: relative;
   overflow: hidden;
   display: flex;
@@ -349,7 +357,7 @@ header nav.scrolled .nav-buttons .language-selector {
 
 .section-one .container .row .card .recipe-link:hover {
   /* background-color: #495e57; */
-  box-shadow: 3px 3px 10px var(--btn-color), -3px -3px 10px var(--btn-color);
+  box-shadow: 0 0 10px var(--btn-color), 0 0 10px var(--btn-color);
   background-color: var(--btn-color);
   color: var(--secondary-color);
   border: none;
@@ -391,54 +399,6 @@ header nav.scrolled .nav-buttons .language-selector {
   z-index: -1;
 }
 
-.section-one .container .row .card .recipe-link:hover:before {
-  top: -35%;
-  background-color: #495e57;
-  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
-}
-
-.section-one .container .row .card .recipe-link:hover:after {
-  top: -45%;
-
-  background-color: #495e57;
-  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
-}
-
-/**contact Cards**/
-
-.contact-card {
-  width: fit-content;
-  height: fit-content;
-  background-color: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 25px 25px;
-  gap: 20px;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
-}
-
-/*header*/
-.header {
-  height: 1px;
-}
-
-ul li a:hover {
-  background-color: rgb(219, 88, 88);
-  color: #fff;
-}
-
-.logo img {
-  float: left;
-  width: 150px;
-  height: auto;
-}
-
-.h-main {
-  max-width: 1165px;
-  margin: auto;
-}
-
 /*===== footer =====*/
 
 footer {
@@ -474,6 +434,12 @@ footer .footer-container ul.footer-links {
 footer .footer-container ul.footer-links li a {
   color: var(--alt-text-color);
   font-size: small;
+}
+
+footer .footer-container .row div:first-child h2 > img {
+  width: 150px;
+  filter: contrast(2);
+  transform: translateY(5px) translateX(5px);
 }
 
 footer .footer-container .row div:nth-child(3) h2 {
