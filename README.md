@@ -11,20 +11,20 @@ This website is home to a collection of delicious recipes, all made with fresh, 
 
 <td>**American Potato Salad*</td>
 <td>🇺🇸 &dash; 🥔🥗</td>
-<td><img src="/Assets/images/AmericanPotatoSalad.webp"></td>
+<td><img src="/Assets/images/AmericanPotatoSalad.webp" width="200" height="100"></td>
 <td>A classic recipe that's perfect for any summer gathering.</td>
 </tr>
 <tr>
 
 <td>**Cherry Cola Ribs**</td>
 <td>🇺🇸 &dash; 🥩🍒🥤</td>
-<td><img src="/Assets/images/Cherry-Cola-Ribs_Chef-John_4x3.webp"></td>
+<td><img src="/Assets/images/Cherry-Cola-Ribs_Chef-John_4x3.webp" width="200" height="100"></td>
 <td>A sweet and smoky dish that's sure to please everyone at your next barbecue.</td>
 </tr>
 <tr>
 <td>**No-Bake Cheesecake Flag Cake**</td>
 <td>🇺🇸 &dash; 🍰🏳</td>
-<td><img src="/Assets/images/No-Break_Cheesecake/Flag-Cake-with-Cheesecake-Topping-25-500x500.jpg"></td>
+<td><img src="/Assets/images/No-Break_Cheesecake/Flag-Cake-with-Cheesecake-Topping-25-500x500.jpg" width="200" height="100"></td>
 <td>A festive and delicious dessert that's perfect for any occasion.</td>
 
 </tr>
