@@ -1,4 +1,8 @@
-# Odin Recipes
+<div align="center" style="color:green">
+
+# 🥘Odin Recipes
+
+</div>
 
 <div align="center">
 
