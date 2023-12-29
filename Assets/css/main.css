@@ -25,9 +25,10 @@
 body {
   background-color: var(--main-background-color);
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
-/* =====typography===== */
+/* =====Typography===== */
 
 h1,
 h2,
@@ -105,18 +106,16 @@ header nav {
 }
 
 header nav.scrolled {
-  background-color: var(--main-background-color);
+  background-color: var(--light-background-color);
   padding: 5px 100px 5px 100px;
 }
 
-header nav.scrolled .logo,
 header nav.scrolled .menu-items a {
   color: var(--secondary-color);
 }
 
-header nav .logo {
-  padding: 0 0 0 20px;
-  color: var(--secondary-color);
+header nav .logo img {
+  width: 200px;
 }
 
 /* menu */
@@ -162,7 +161,7 @@ header nav .nav-buttons .search {
 }
 
 header nav.scrolled .nav-buttons .search {
-  color: var(--secondary-color) !important;
+  color: black;
   background-color: transparent;
   border: none;
   border-radius: 50%;
@@ -197,17 +196,22 @@ header nav .nav-buttons .language-selector select > datalist {
 }
 
 header nav .nav-buttons .language-selector select option {
-  color: var(--primary-color);
+  color: var(--secondary-color);
   font-size: small;
   font-weight: 600;
   background: transparent;
+  /* outline: none; */
 }
 
 header nav.scrolled .nav-buttons .language-selector {
   background-color: transparent;
-  color: var(--secondary-color) !important;
+  color: var(--secondary-color);
   border: none;
   outline: none;
+}
+
+header nav.scrolled .nav-buttons .language-selector select {
+  color: var(--secondary-color);
 }
 
 /* =====hero image===== */
@@ -430,6 +434,12 @@ footer .footer-container ul.footer-links {
 footer .footer-container ul.footer-links li a {
   color: var(--alt-text-color);
   font-size: small;
+}
+
+footer .footer-container .row div:first-child h2 > img {
+  width: 150px;
+  filter: contrast(2);
+  transform: translateY(5px) translateX(5px);
 }
 
 footer .footer-container .row div:nth-child(3) h2 {
