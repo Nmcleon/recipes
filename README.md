@@ -8,21 +8,23 @@ This website is home to a collection of delicious recipes, all made with fresh, 
 
 <table>
 <tr>
-<td>![aps](/Assets/images/AmericanPotatoSalad.webp)</td>
+
 <td>**American Potato Salad*</td>
-<td>🇺🇸 🥔 🥗</td>
+<td>🇺🇸 &dash; 🥔🥗</td>
+<td><img src="/Assets/images/AmericanPotatoSalad.webp"></td>
 <td>A classic recipe that's perfect for any summer gathering.</td>
 </tr>
 <tr>
-<td>![ccr](/Assets/images/Cherry-Cola-Ribs_Chef-John_4x3.webp)</td>
+
 <td>**Cherry Cola Ribs**</td>
-<td>🇺🇸 🥩 🍒 🥤</td>
+<td>🇺🇸 &dash; 🥩🍒🥤</td>
+<td><img src="/Assets/images/Cherry-Cola-Ribs_Chef-John_4x3.webp"></td>
 <td>A sweet and smoky dish that's sure to please everyone at your next barbecue.</td>
 </tr>
 <tr>
-<td>![](/Assets/images/No-Break_Cheesecake/Flag-Cake-with-Cheesecake-Topping-25-500x500.jpg)</td>
 <td>**No-Bake Cheesecake Flag Cake**</td>
-<td>🇺🇸 🍰 🏳</td>
+<td>🇺🇸 &dash; 🍰🏳</td>
+<td><img src="/Assets/images/No-Break_Cheesecake/Flag-Cake-with-Cheesecake-Topping-25-500x500.jpg"></td>
 <td>A festive and delicious dessert that's perfect for any occasion.</td>
 
 </tr>
