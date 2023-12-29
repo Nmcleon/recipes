@@ -1,19 +1,41 @@
 # Odin Recipes
-live site : https://onkiaye.github.io/odin-recipes/ {website under works}
+
+<!-- live site : https://onkiaye.github.io/odin-recipes/ {website under works} -->
 
 This website is home to a collection of delicious recipes, all made with fresh, high-quality ingredients. Whether you're in the mood for something sweet or savory, we have a meal that's perfect for you.
 
 ## Recipes
 
-* **American Potato Salad** 🇺🇸 🥔 🥗
-[Image of American Potato Salad]
-A classic recipe that's perfect for any summer gathering.
-* **Cherry Cola Ribs** 🇺🇸 🥩 🍒 🥤
-A sweet and smoky dish that's sure to please everyone at your next barbecue.
+<table>
+<tr>
+<td>![aps](/Assets/images/AmericanPotatoSalad.webp)</td>
+<td>**American Potato Salad*</td>
+<td>🇺🇸 🥔 🥗</td>
+<td>A classic recipe that's perfect for any summer gathering.</td>
+</tr>
+<tr>
+<td>![ccr](/Assets/images/Cherry-Cola-Ribs_Chef-John_4x3.webp)</td>
+<td>**Cherry Cola Ribs**</td>
+<td>🇺🇸 🥩 🍒 🥤</td>
+<td>A sweet and smoky dish that's sure to please everyone at your next barbecue.</td>
+</tr>
+<tr>
+<td>![](/Assets/images/No-Break_Cheesecake/Flag-Cake-with-Cheesecake-Topping-25-500x500.jpg)</td>
+<td>**No-Bake Cheesecake Flag Cake**</td>
+<td>🇺🇸 🍰 🏳</td>
+<td>A festive and delicious dessert that's perfect for any occasion.</td>
+
+</tr>
+</table>
+
+- - [Image of American Potato Salad]
+-
+
 [Image of Cherry Cola Ribs]
-* **No-Bake Cheesecake Flag Cake** 🇺🇸 🍰 🏳
-A festive and delicious dessert that's perfect for any occasion.
-![Image of No-Bake Cheesecake Flag Cake!] 
+
+- 🇺🇸 🍰 🏳
+
+![Image of No-Bake Cheesecake Flag Cake!]
 
 ## Ingredients
 
@@ -41,10 +63,13 @@ This recipe is for a delicious and festive no-bake cheesecake cake that's perfec
 
 **Tips:**
 
-* For a more intense chocolate flavor, use dark chocolate cocoa powder.
-* If you don't have a 9x11-inch baking dish, you can use a 9-inch round cake pan. Just be sure to adjust the baking time accordingly.
-* You can use any type of berries you like for the topping. Blueberries and strawberries are traditional, but raspberries, blackberries, and even cherries would be delicious.
-* This cake can be made ahead of time and stored in the refrigerator for up to 3 days.
-* Enjoy! 🇺🇸 🍰 
+- For a more intense chocolate flavor, use dark chocolate cocoa powder.
+- If you don't have a 9x11-inch baking dish, you can use a 9-inch round cake pan. Just be sure to adjust the baking time accordingly.
+- You can use any type of berries you like for the topping. Blueberries and strawberries are traditional, but raspberries, blackberries, and even cherries would be delicious.
+- This cake can be made ahead of time and stored in the refrigerator for up to 3 days.
+- Enjoy! 🇺🇸 🍰
 
-![Image of No-Bake Cheesecake Flag Cake] 
+## Contributors
+
+- Noah Okeyo &mdash; ![@nmcleon](https://github.com/nmcleon)
+- Blain Muema &mdash; ![@octocatblain](https://github.com/octocatblain)
