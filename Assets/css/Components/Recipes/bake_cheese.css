@@ -1,1 +1,35 @@
 @import url("/Assets/css/main.css");
+
+section.hero {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, black, transparent),
+    url("/Assets/images/No-Break_Cheesecake/No-Bake-Cheesecake-Flag-Cake-by-MommyTommie-2000-325e2f9d42d64078aa41399bcaf63f2c.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  z-index: 0;
+}
+
+section .hero-content .square {
+  width: 400px;
+  height: 200px;
+  border: 10px solid red;
+  position: absolute;
+  top: 180px;
+  left: 20px;
+  z-index: -1;
+  opacity: 40%;
+}
+
+section .hero-content h1 {
+  color: var(--primary-color);
+  padding-top: 250px;
+  text-align: center;
+  font-weight: 900;
+  position: relative;
+  z-index: 0;
+  font-size: 64px;
+}
