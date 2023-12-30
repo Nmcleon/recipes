@@ -106,12 +106,12 @@ header nav {
 }
 
 header nav.scrolled {
-  background-color: var(--light-background-color);
+  background-color: rgba(0, 0, 0, 0.75);
   padding: 5px 100px 5px 100px;
 }
 
 header nav.scrolled .menu-items a {
-  color: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 header nav .logo img {
@@ -161,7 +161,7 @@ header nav .nav-buttons .search {
 }
 
 header nav.scrolled .nav-buttons .search {
-  color: black;
+  color: var(--primary-color);
   background-color: transparent;
   border: none;
   border-radius: 50%;
@@ -205,13 +205,13 @@ header nav .nav-buttons .language-selector select option {
 
 header nav.scrolled .nav-buttons .language-selector {
   background-color: transparent;
-  color: var(--secondary-color);
+  color: var(--primary-color);
   border: none;
   outline: none;
 }
 
 header nav.scrolled .nav-buttons .language-selector select {
-  color: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 /* =====hero image===== */
