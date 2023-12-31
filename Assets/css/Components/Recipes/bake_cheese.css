@@ -231,3 +231,43 @@ section.next-recipe .container .row .next-content a {
 section.next-recipe .container .row .next-content a svg {
   color: var(--h2-color);
 }
+
+/* newsletter */
+
+/* section.newsletter {
+   width: 100%;
+  height: 200px; 
+  z-index: 0;
+  position: relative;
+  background: url("/Assets/images/No-Break_Cheesecake/No-Bake-Cheesecake-Flag-Cake-by-MommyTommie-2000-325e2f9d42d64078aa41399bcaf63f2c.jpg");
+}
+
+section.newsletter .container .row .newsletter-form form {
+  z-index: 0;
+  position: absolute;
+} */
+
+/* socials */
+
+section.socials .social-buttons {
+  width: 100%;
+  height: 100px;
+  background-color: rgb(51, 51, 51);
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-right: 100px;
+}
+
+section.socials .social-buttons a {
+  text-decoration: none;
+  padding: 0 10px;
+  color: var(--primary-color);
+}
+
+section.socials .social-buttons a svg {
+  height: 50px;
+  width: 50px;
+}
