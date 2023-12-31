@@ -190,3 +190,44 @@ section.share .container .row .share-button:hover .share-icons {
   visibility: visible;
   opacity: 1;
 }
+
+/* next recipe */
+section.next-recipe .container .row {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+section.next-recipe .container .row img {
+  border-radius: 20px;
+}
+
+section.next-recipe .container .row .next-image {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+}
+
+section.next-recipe .container .row .next-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 20px;
+}
+
+section.next-recipe .container .row .next-content p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--secondary-color);
+}
+
+section.next-recipe .container .row .next-content a {
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--secondary-color);
+}
+
+section.next-recipe .container .row .next-content a svg {
+  color: var(--h2-color);
+}
