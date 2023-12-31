@@ -78,7 +78,7 @@ section.ingredients .container .row {
   padding-bottom: 75px;
 }
 
-section.ingredients .container .row .col {
+section.ingredients .container .row .recipe-col {
   gap: 50px;
   display: flex;
   justify-content: flex-start;
@@ -103,4 +103,37 @@ section.ingredients .container .row .recipe-card .recipe-card-title {
   font-size: 1.5rem;
   text-decoration: underline;
   font-weight: 500;
+}
+
+/* instructions */
+section.instructions .container .row {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+section.instructions .container .row hr {
+  color: var(--secondary-color);
+  font-weight: 300;
+}
+
+section.instructions .container .row table tr {
+  border-bottom: 1px solid var(--alt-text-color);
+  padding: 50px 0;
+}
+
+section.instructions .container .row table tr td {
+  padding: 30px 0;
+}
+
+section.instructions .container .row table tr td:first-child {
+  color: var(--h2-color);
+  width: 300px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-left: 20px;
+}
+section.instructions .container .row table tr td p {
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--secondary-color);
 }
