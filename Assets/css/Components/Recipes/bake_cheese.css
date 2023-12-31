@@ -46,7 +46,7 @@ section.recipe-description .container .row {
   padding-bottom: 75px;
 }
 
-section.recipe-description .container .row .description h2 {
+.recipe-h2 {
   color: var(--h2-color);
   font-weight: 300;
   text-shadow: 2px 2px 2px var(--secondary-color);
@@ -69,4 +69,38 @@ section.recipe-description .container .row img {
 section.recipe-description .container .row img:hover {
   border-radius: 10%;
   transform: scale(1.2);
+}
+
+/* ingredients */
+
+section.ingredients .container .row {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+section.ingredients .container .row .col {
+  gap: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 10px;
+}
+section.ingredients .container .row .recipe-card {
+  width: 400px;
+  height: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  overflow-y: scroll;
+}
+
+section.ingredients .container .row .recipe-card::-webkit-scrollbar {
+  display: none;
+}
+
+section.ingredients .container .row .recipe-card .recipe-card-title {
+  color: var(--h2-color);
+  font-size: 1.5rem;
+  text-decoration: underline;
+  font-weight: 500;
 }
