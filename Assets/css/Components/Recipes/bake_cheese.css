@@ -1,1 +1,351 @@
 @import url("/Assets/css/main.css");
+
+body {
+  background-color: var(--light-background-color) !important;
+  color: var(--secondary-color);
+}
+
+section.hero {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, black, transparent),
+    url("/Assets/images/No-Break_Cheesecake/No-Bake-Cheesecake-Flag-Cake-by-MommyTommie-2000-325e2f9d42d64078aa41399bcaf63f2c.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  z-index: 0;
+}
+
+section .hero-content .square {
+  width: 400px;
+  height: 200px;
+  border: 10px solid red;
+  position: absolute;
+  top: 180px;
+  left: 20px;
+  z-index: -1;
+  opacity: 40%;
+}
+
+section .hero-content h1 {
+  color: var(--primary-color);
+  padding-top: 250px;
+  text-align: center;
+  font-weight: 900;
+  position: relative;
+  z-index: 0;
+  font-size: 64px;
+}
+
+/* recipe description */
+
+section.recipe-description .container .row {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+.recipe-h2 {
+  color: var(--h2-color);
+  font-weight: 300;
+  text-shadow: 2px 2px 2px var(--secondary-color);
+}
+
+section.recipe-description .container .row .description p {
+  color: var(--secondary-color);
+}
+
+section.recipe-description .container .row img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: space-around;
+  padding: 10px 10px;
+  transition: all 200ms ease;
+}
+
+section.recipe-description .container .row img:hover {
+  border-radius: 10%;
+  transform: scale(1.2);
+}
+
+/* ingredients */
+
+section.ingredients .container .row {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+section.ingredients .container .row .recipe-col {
+  gap: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 10px;
+}
+section.ingredients .container .row .recipe-card {
+  width: 400px;
+  height: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  overflow-y: scroll;
+}
+
+section.ingredients .container .row .recipe-card::-webkit-scrollbar {
+  display: none;
+}
+
+section.ingredients .container .row .recipe-card .recipe-card-title {
+  color: var(--h2-color);
+  font-size: 1.5rem;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+/* instructions */
+section.instructions .container .row {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+section.instructions .container .row hr {
+  color: var(--secondary-color);
+  font-weight: 300;
+}
+
+section.instructions .container .row table tr {
+  border-bottom: 1px solid var(--alt-text-color);
+  padding: 50px 0;
+}
+
+section.instructions .container .row table tr td {
+  padding: 30px 0;
+}
+
+section.instructions .container .row table tr td:first-child {
+  color: var(--h2-color);
+  width: 300px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-left: 20px;
+}
+section.instructions .container .row table tr td p {
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--secondary-color);
+}
+
+/* share */
+
+section.share .container .row .share-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+  gap: 20px;
+}
+
+section.share .container .row .share-button {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: var(--h2-color);
+  color: var(--primary-color);
+  border: none;
+  position: relative;
+}
+
+section.share .container .row .share-button .share-icons {
+  visibility: hidden;
+  width: max-content;
+  background-color: var(--light-background-color);
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 120%;
+  left: 125%;
+  margin-left: -120px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+section.share .container.row .share-button .share-icons::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: var(--main-background-color) transparent transparent
+    var(--main-background-color);
+}
+
+section.share .container .row .share-button:hover .share-icons {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* next recipe */
+section.next-recipe .container .row {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+section.next-recipe .container .row img {
+  border-radius: 20px;
+}
+
+section.next-recipe .container .row .next-image {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+}
+
+section.next-recipe .container .row .next-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 20px;
+}
+
+section.next-recipe .container .row .next-content p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--secondary-color);
+}
+
+section.next-recipe .container .row .next-content a {
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--secondary-color);
+}
+
+section.next-recipe .container .row .next-content a svg {
+  color: var(--h2-color);
+}
+
+/* newsletter */
+
+/* section.newsletter {
+   width: 100%;
+  height: 200px; 
+  z-index: 0;
+  position: relative;
+  background: url("/Assets/images/No-Break_Cheesecake/No-Bake-Cheesecake-Flag-Cake-by-MommyTommie-2000-325e2f9d42d64078aa41399bcaf63f2c.jpg");
+}
+
+section.newsletter .container .row .newsletter-form form {
+  z-index: 0;
+  position: absolute;
+} */
+
+/* socials */
+
+section.socials .social-buttons {
+  width: 100%;
+  height: 100px;
+  background-color: rgb(51, 51, 51);
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding-top: 75px;
+  padding-bottom: 75px;
+  padding-right: 100px;
+}
+
+section.socials .social-buttons a {
+  text-decoration: none;
+  padding: 0 10px;
+  color: var(--primary-color);
+}
+
+section.socials .social-buttons a svg {
+  height: 50px;
+  width: 50px;
+}
+
+/* footer */
+
+footer {
+  width: 100%;
+  height: 50px;
+  background-color: var(--dark-background-color);
+  color: var(--primary-color);
+}
+
+footer .container .row .copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  color: var(--primary-color);
+}
+
+footer .container .row .copyright .company p {
+  color: var(--primary-color);
+}
+
+footer .container .row .copyright .links a,
+footer .container .row .copyright .authors a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: 1rem;
+}
+
+footer .container .row .copyright .links a {
+  padding: 0 20px;
+}
+
+footer .container .row .copyright .authors .author-tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+footer .container .row .copyright .authors .author-tooltip .tooltip-text {
+  visibility: hidden;
+  width: max-content;
+  background-color: var(--light-background-color);
+  color: var(--secondary-color);
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 20px;
+  position: absolute;
+  z-index: 1;
+  bottom: 120%;
+  left: 125%;
+  margin-left: -100px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+footer .container .row .copyright .authors .author-tooltip .tooltip-text a {
+  color: var(--secondary-color);
+  text-transform: capitalize;
+}
+
+footer .container .row .authors .author-tooltip .tooltip-text::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+}
+
+footer .container .row .authors .author-tooltip:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+  cursor: pointer;
+}
