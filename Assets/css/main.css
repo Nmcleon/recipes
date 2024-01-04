@@ -1,5 +1,5 @@
 :root {
-  --main-background-color: hsl(160, 13%, 33%);
+  --main-background-color: hsl(0, 0%, 100%);
   --dark-background-color: hsl(0, 0%, 0%);
   --light-background-color: hsl(0, 0%, 100%);
   --primary-color: hsl(0, 0%, 100%);
@@ -23,13 +23,13 @@
 }
 
 body {
-  background-color: var(--main-background-color);
+  background-color: #ffff;
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
 /* =====Typography===== */
-
+/*
 h1,
 h2,
 h3,
@@ -39,7 +39,7 @@ h6,
 p {
   color: var(--alt-text-color);
 }
-
+*/
 h1 {
   font-size: 3rem;
   font-weight: 700;

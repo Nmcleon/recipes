@@ -1,11 +1,13 @@
 @import url("/Assets/css/main.css");
 
 footer {
-  background-color: var(--dark-background-color);
+  background: rgba(0, 0, 0, 0.9);
+  /*background-color: var(--dark-background-color);*/
   position: relative;
   bottom: 0;
   width: 100%;
   height: 300px;
+  margin-top: auto;
 }
 
 footer .footer-container .row {
@@ -14,12 +16,12 @@ footer .footer-container .row {
 
 footer .footer-container h2 {
   font-size: 1.5rem;
-  color: var(--text-color);
+  color: rgba(255, 255, 255, 1);
 }
 
 footer .footer-container .about-us p {
   font-size: smaller;
-  color: var(--alt-text-color);
+  color: #999;
   text-align: justify;
   padding: 0 20px 0 0;
 }
@@ -31,7 +33,7 @@ footer .footer-container ul.footer-links {
 }
 
 footer .footer-container ul.footer-links li a {
-  color: var(--alt-text-color);
+  color: #999;
   font-size: small;
 }
 
@@ -139,13 +141,18 @@ footer .footer-container .row .copyright .authors {
 
 footer .footer-container .row .copyright .authors a {
   text-decoration: none;
-  color: var(--primary-color);
+  color: #999;
 }
 
 footer .footer-container .row .copyright .authors .author-tooltip {
   position: relative;
   display: inline-block;
 }
+
+footer .footer-container .row .copyright .company p {
+  color: rgb(255, 255, 255); /* Change the color */
+}
+
 
 footer
   .footer-container
@@ -156,7 +163,7 @@ footer
   .tooltip-text {
   visibility: hidden;
   width: 100px;
-  background-color: var(--main-background-color);
+  background-color:  rgba(0, 0, 0, 0.9);
   color: var(--secondary-color);
   text-align: center;
   border-radius: 6px;

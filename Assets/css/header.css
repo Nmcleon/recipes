@@ -1,11 +1,13 @@
 @import url("/Assets/css/main.css");
 
+
 header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background: none;
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(50px);
   z-index: 1000;
   transition: 0.5s;
 }
@@ -14,14 +16,14 @@ header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 100px 20px 100px;
+  padding: 1.3rem 10%;
   transition: 0.5s;
 }
 
 header nav.scrolled {
-  background: rgba(30, 30, 30, 0.50);
-  padding: 5px 100px 5px 100px;
-  backdrop-filter: blur(4px);
+  background: rgba(30, 30, 30);
+  padding: 1.3rem 10%;
+  backdrop-filter: none;
   -webkit-backdrop-filter: blur(4px);
 }
 
@@ -48,6 +50,33 @@ header nav .menu-items a {
   list-style: none;
   padding: 0 20px;
   font-weight: 600;
+}
+
+header nav .menu-items a {
+  position: relative;
+}
+
+header nav .menu-items a:hover {
+  text-decoration: none;
+  position: relative;
+}
+
+header nav .menu-items a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -3px;
+  left: 0;
+  background-color: #c92535;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease;
+}
+
+header nav .menu-items a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 /* ===buttons=== */
