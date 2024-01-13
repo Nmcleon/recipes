@@ -1,0 +1,130 @@
+@import url("recipe-main.css");
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: none;
+  z-index: 1000;
+  transition: 0.5s;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 100px 20px 100px;
+  transition: 0.5s;
+}
+
+header nav.scrolled {
+  background: rgba(30, 30, 30, 0.5);
+  padding: 5px 100px 5px 100px;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+header nav.scrolled .menu-items a {
+  color: white;
+}
+
+header nav .logo img {
+  width: 200px;
+}
+
+/* menu */
+
+header nav .menu-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav .menu-items a {
+  color: var(--primary-color);
+  text-decoration: none;
+  list-style: none;
+  padding: 0 20px;
+  font-weight: 600;
+}
+
+/* ===buttons=== */
+
+/* search */
+header nav .nav-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+header nav .nav-buttons button {
+  border: none;
+  outline: none;
+}
+
+header nav .nav-buttons .search {
+  color: var(--primary-color);
+  background: none;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  outline: none;
+}
+
+header nav.scrolled .nav-buttons .search {
+  color: black;
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+}
+
+/* language selector button */
+
+header nav .nav-buttons .language-selector {
+  color: var(--primary-color);
+  background: transparent;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+}
+header nav .nav-buttons .language-selector select {
+  border: none;
+  text-decoration: none;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  background: transparent;
+  font-weight: 600;
+  color: var(--primary-color);
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+header nav .nav-buttons .language-selector select > datalist {
+  background-color: transparent;
+}
+
+header nav .nav-buttons .language-selector select option {
+  color: var(--secondary-color);
+  font-size: small;
+  font-weight: 600;
+  background: transparent;
+  /* outline: none; */
+}
+
+header nav.scrolled .nav-buttons .language-selector {
+  background-color: transparent;
+  color: var(--secondary-color);
+  border: none;
+  outline: none;
+}
+
+header nav.scrolled .nav-buttons .language-selector select {
+  color: var(--secondary-color);
+}
