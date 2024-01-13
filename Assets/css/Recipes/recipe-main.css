@@ -23,14 +23,32 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* =========== scrollbar===========  */
+/* width */
+::-webkit-scrollbar {
+  width: 7.5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: lime;
+  border-radius: 50px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: white;
+}
+
 /* ===========keyframes=========== */
 
 @keyframes fade-in {
-  from {
-    /* opacity: 0; */
-  }
   to {
-    /* opacity: 1; */
     scale: 1;
   }
 }
@@ -63,11 +81,12 @@ body {
 }
 
 .text {
-  font-size: 1rem;
+  font-size: 1.25rem;
   text-align: justify;
   font-weight: 300;
   padding-bottom: 20px;
   line-height: 1.25rem;
+  text-align: center;
 }
 
 a {
@@ -203,6 +222,7 @@ section:nth-child(even) {
   img {
     width: 200px;
     height: 200px;
+    gap: 50px;
     border-radius: 50%;
     transition: all 200ms ease;
   }
