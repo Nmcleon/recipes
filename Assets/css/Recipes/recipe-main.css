@@ -23,6 +23,25 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* ===========keyframes=========== */
+
+@keyframes fade-in {
+  from {
+    /* opacity: 0; */
+  }
+  to {
+    /* opacity: 1; */
+    scale: 1;
+  }
+}
+
+.fade-in {
+  animation: fade-in linear forwards;
+  animation-timeline: view();
+  animation-range-start: cover;
+  animation-range-end: 500px;
+}
+
 /*=========== typography ===========*/
 
 .title {
@@ -40,6 +59,7 @@ body {
   font-weight: 500;
   color: var(--heading-clr);
   padding-bottom: 20px;
+  text-align: center;
 }
 
 .text {
@@ -64,6 +84,7 @@ ul {
 
 .wrapper {
   margin: auto 100px;
+  scale: 0.8;
 }
 
 section {
@@ -80,6 +101,7 @@ section:nth-child(even) {
 .hero {
   min-height: 100dvh;
   position: relative;
+  object-fit: cover;
   z-index: -1;
 }
 
@@ -121,7 +143,7 @@ section:nth-child(even) {
 
 .cards {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-evenly;
   gap: 20px;
   align-items: center;
 }
@@ -196,11 +218,7 @@ hr {
   margin: auto 100px;
 }
 
-/*===== more recipes =====*/
-
-.more-recipes .subtitle {
-  text-align: center;
-}
+/*================= more recipes =====================*/
 
 .more-col {
   display: flex;
