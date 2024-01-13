@@ -5,7 +5,7 @@
 .hero {
   position: relative;
   min-height: 100vh;
-  background: url("/Assets/images/elena-leya-DBVIb_rWUKw-unsplash\ 1.png") center/cover no-repeat;
+  background: url("/recipes/Assets/images/elena-leya-DBVIb_rWUKw-unsplash\ 1.png") center/cover no-repeat;
   /*text-align: center;*/
   display: flex;
   align-items: center;
