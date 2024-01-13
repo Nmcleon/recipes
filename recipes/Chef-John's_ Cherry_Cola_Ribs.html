@@ -5,128 +5,308 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- css -->
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- bootstrap CSS-CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!--Main css -->
+    <!-- <link rel="stylesheet" href="./Assets/css/main.css"> -->
+
+    <!-- header and footer css -->
+    <link rel="stylesheet" href="../Assets/css/recipe-footer.css">
+    <link rel="stylesheet" href="../Assets/css/recipe-header.css">
+
+    <!-- recipe page css -->
     <link rel="stylesheet" href="../Assets/css/Recipes/recipe-main.css">
+    <link rel="stylesheet" href="../Assets/css/Recipes/cherry_cola.css">
 
 
     <title>Cherry Cola Ribs</title>
 </head>
 
 <body>
-    <!-- home link -->
-    <div style="text-align: center;">
-        <a href="../index.html">ODIN RECIPIES</a>
-    </div>
+    <header>
 
-    <h1 class="title">Cherry Cola Ribs</h1>
+        <!-- navigation -->
+        <!-- <nav id="navbar">
+                <div class="logo">
+                    <img src="/Assets/images/logo.png" alt="logo">
+                </div>
+                <div class="menu-items">
+                    <a href="#">Home</a>
+                    <a href="/about.html">About</a>
+                    <a href="/contact.html">Contact</a>
+                    <a href="/recipes.html">Recipes</a>
+                </div>
+                <div class="nav-buttons">
+                    <button class="search"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                        </svg></button>
+                    <button class="language-selector">
+                        <select name="language" id="language">
+                            <option value="EN">EN</option>
+                            <option value="FR">FR</option>
+                            <option value="BR">BR</option>
+                        </select>
+                    </button>
+                </div>
+    
+            </nav> -->
+    </header>
 
-    <!-- img of finished dish -->
-    <img src="../images/Cherry-Cola-Ribs_Chef-John_4x3.webp" alt="Cherry Cola Ribs">
+    <section class="hero">
+        <div class="overlay"></div>
+        <h1 class="title">Cherry Cola Ribs</h1>
+    </section>
+
 
     <!--Description -->
-    <h2 class="subtitle">Description</h2>
+    <section class="description">
+        <div class="wrapper fade-in">
+            <div class="col">
+                <h2 class="subtitle">Description</h2>
 
-    <p>I've come to find out that cherry cola makes an incredibly delicious rack of ribs, which strangely enough, don't
-        really taste like either cherry or cola, but taste very similar to your All-American Midwest-style barbecue.</p>
+                <p class="text">I've come to find out that cherry cola makes an incredibly delicious rack of ribs, which
+                    strangely enough, don't
+                    really taste like either cherry or cola, but taste very similar to your All-American Midwest-style
+                    barbecue.</p>
+            </div>
+            <div class="col images-col">
+                <img src="../Assets/images/Cheri-Cola_Ribs/7547750_Cherry-Cola-Ribs_Chef-John_2x1-c7ab08594462411281fe8aa3a7d3e70b.jpg"
+                    alt="" srcset="">
+                <img src="../Assets/images/Cheri-Cola_Ribs/Cherry-Coke-RIbs-04-740x493.jpg.webp" alt="" srcset="">
+                <img src="../Assets/images/Cheri-Cola_Ribs/Cherry-Coke-RIbs-13-720x540.jpg" alt="" srcset="">
+                <img src="../Assets/images/Cheri-Cola_Ribs/Cherry-Cola-BBQ-Glaze-1024x684.jpg" alt="" srcset="">
+                <img src="../Assets/images/Cheri-Cola_Ribs/cherry-ribs-14.jpg" alt="" srcset="">
+                <img src="../Assets/images/Cheri-Cola_Ribs/image.webp" alt="" srcset="">
+                <img src="../Assets/images/Cheri-Cola_Ribs/sweet-and-smoky-baby-back-ribs-with-bourbon-barbecue-sauce-646.webp"
+                    alt="" srcset="">
+                <img src="../Assets/images/Cherry-Cola-Ribs_Chef-John_4x3.webp" alt="" srcset="">
+
+            </div>
+
+        </div>
+    </section>
+
 
     <!-- Unordered list of ingredients -->
-    <h3 class="subtitle">Ingredients</h3>
-    <ul>
-        <li>Dry Rub
-            <ul>
-                <li>1 tablespoon kosher salt</li>
-                <li>1 teaspoon smoked paprika</li>
-                <li>1/2 teaspoon freshly ground black pepper</li>
-                <li>1/2 teaspoon onion powder</li>
-                <li>1/2 teaspoon garlic powder</li>
-            </ul>
-        </li>
-        <li>Wet Rub
-            <ul>
-                <li>2 tablespoons prepared yellow mustard</li>
-                <l1>1 tablespoon apple cider vinegar</l1>
-                <li>2 tablespoons cherry cola</li>
-            </ul>
-        </li>
-        <li>Ribs and Sauce
-            <ul>
-                <li>1 (3 pound) rack baby back ribs, membrane removed</li>
-                <l1>1 1/2 cups cherry cola</l1>
-                <li>2 tablespoons ketchup</li>
-                <li>1/4 teaspoon freshly ground black pepper</li>
-                <li>salt to taste</li>
-            </ul>
-        </li>
-    </ul>
+    <section class="ingredients ">
+        <div class="wrapper fade-in">
+            <h3 class="subtitle">Ingredients</h3>
+            <div class="cards">
+                <div class="card">
+                    <p class="card-title">Dry Rub</p>
+
+                    <ul>
+                        <li>1 tablespoon kosher salt</li>
+                        <li>1 teaspoon smoked paprika</li>
+                        <li><sup>1</sup>/<sub>2</sub> teaspoon freshly ground black pepper</li>
+                        <li><sup>1</sup>/<sub>2</sub> teaspoon onion powder</li>
+                        <li><sup>1</sup>/<sub>2</sub> teaspoon garlic powder</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <p class="card-title">Wet Rub</p>
+                    <ul>
+                        <li>2 tablespoons prepared yellow mustard</li>
+                        <li>1 tablespoon apple cider vinegar</li>
+                        <li>2 tablespoons cherry cola</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <p class="card-title">Ribs and Sauce</p>
+                    <ul>
+                        <li>1 (3 pound) rack baby back ribs, membrane removed</li>
+                        <li>1<sup>1</sup>/<sub>2</sub> cups cherry cola</li>
+                        <li>2 tablespoons ketchup</li>
+                        <li><sup>1</sup>/<sub>4</sub> teaspoon freshly ground black pepper</li>
+                        <li> Salt to taste</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <!-- Ordered list of Steps to follow -->
-    <h3 class="subtitle">Steps</h3>
-    <ol>
-        <li>Step 1</li>
-        <p>For dry rub, whisk salt, smoked paprika, onion powder, garlic powder, and 1/2 teaspoon black pepper together
-            in a small bowl; set aside.</p>
-        <li>Step 2</li>
-        <p> For wet rub, whisk mustard, vinegar, and 2 tablespoons cherry cola together in a small bowl; set aside.</p>
-        <li>Step 3</li>
-        <p>Preheat the oven to 250 degrees F (120 degrees C). Line a sheet pan with a piece of foil long enough to
-            extend past the rack of ribs by at least 6 inches on both ends. Use large size, heavy-duty foil if possible.
-            Place the ribs, meat side up, on the foil.</p>
-        <li>Step 4</li>
-        <p>Brush wet rub over top and sides, and sprinkle about 60% of dry rub over the surface. Turn ribs over and,
-            with the bone side up, brush with wet rub, then sprinkle with all the remaining dry rub. Reserve any wet rub
-            left at this point.</p>
-        <li>Step 5</li>
-        <p>Center the ribs lengthwise on the foil, and bring up the ends of the foil, like a boat, and crimp so any
-            juices will stay inside. Crimp the two long edges together over the top of the ribs. The foil doesn’t have
-            to be airtight, but the whole rack should be covered.</p>
-        <li>Step 6</li>
-        <p>Bake in the preheated oven for 2 hours. Remove, open the foil, and pour off juices that have accumulated in
-            the foil into a saucepan.</p>
-        <li>Step 7</li>
-        <p>Turn the rack meat side up, and brush with wet rub. Enclose again in the foil, and continue to roast at 250
-            degrees F (120 degrees C) for 1 hour.</p>
-        <li>Step 8</li>
-        <p>While meat is cooking, add any remaining wet rub to the juices in the saucepan, then add the 1 1/2 cups
-            cherry cola, ketchup, and 1/4 teaspoon freshly ground black pepper.</p>
-        <li>Step 9</li>
-        <p>Bring to a simmer on medium high, cook until liquid is reduced by half. Reduce heat further, and simmer
-            liquids very slowly until they eventually thicken and become sauce-like. Once it is the thickness of
-            barbecue sauce, remove from heat entirely.</p>
-        <li>Step 10</li>
-        <p>After one hour at 250 degrees F (120 degrees C), remove ribs from the oven, and open out the foil, pressing
-            foil flat to line the pan.</p>
-        <li>Step 11</li>
-        <p>Turn the oven temperature up to 300 degrees F (150 degrees C).</p>
-        <li>Step 12</li>
-        <p>Brush ribs with sauce. Return ribs to the oven for 15 minutes. Repeat this process, brushing ribs with sauce
-            every 15 minutes, until ribs are tender and come easily off the bone, about 1 hour more. (See Note) (150
-            degrees C).</p>
-        <li>Step 13</li>
-        <p>Let ribs rest for about 10 minutes. Slice between each rib with a sharp knife, and serve with extra sauce.
-        </p>
+    <section class="steps ">
+        <div class="wrapper fade-in">
+            <h3 class="subtitle">Steps</h3>
 
-    </ol>
+            <table>
 
-    <img src="../images/mhmm-food.gif" alt="Man eating ribs">
+                <tbody>
+                    <tr class="table-row">
+                        <td class="step">Step 1</td>
+                        <td class="step-description">For dry rub, whisk salt, smoked paprika, onion powder, garlic
+                            powder, and 1/2 teaspoon black pepper together
+                            in a small bowl; set aside.</td>
+                    </tr>
+                    <tr class="table-row">
+                        <td class="step">Step 2</td>
+                        <td class="step-description">For wet rub, whisk mustard, vinegar, and 2 tablespoons cherry cola
+                            together in a small bowl; set aside.</td>
+                    </tr>
+                    <tr class="table-row">
+                        <td class="step">Step 3</td>
+                        <td class="step-description">Preheat the oven to 250&deg;F (120&deg;C). Line a sheet pan
+                            with a piece of foil long enough to
+                            extend past the rack of ribs by at least 6 inches on both ends. Use large size, heavy-duty
+                            foil if possible.
+                            Place the ribs, meat side up, on the foil.</td>
+                    </tr>
+                    <tr class="table-row">
+                        <td class="step">Step 4</td>
+                        <td class="step-description">Brush wet rub over top and sides, and sprinkle about 60% of dry rub
+                            over the surface. Turn ribs over and,
+                            with the bone side up, brush with wet rub, then sprinkle with all the remaining dry rub.
+                            Reserve any wet rub
+                            left at this point.</td>
+                    </tr>
+                    <tr class="table-row">
+                        <td class="step">Step 5</td>
+                        <td class="step-description">Center the ribs lengthwise on the foil, and bring up the ends of
+                            the foil, like a boat, and crimp so any
+                            juices will stay inside. Crimp the two long edges together over the top of the ribs. The
+                            foil doesn’t have
+                            to be airtight, but the whole rack should be covered.</td>
+                    </tr>
+                    <tr class="table-row">
+                        <td class="step">Step 6</td>
+                        <td class="step-description">Bake in the preheated oven for 2 hours. Remove, open the foil, and
+                            pour off juices that have accumulated in
+                            the foil into a saucepan.</td>
+                    </tr>
+                    <tr class="table-row">
+                        <td class="step">Step 7</td>
+                        <td class="step-description">Turn the rack meat side up, and brush with wet rub. Enclose again
+                            in the foil, and continue to roast at 250&deg;F (120&deg;C) for 1 hour.</td>
+                    </tr>
 
-    <h4><em>Cook's Notes</em></h4>
-    <p>Here’s a trick for telling whether your ribs are done that I learned from an old pitmaster. During one of the
-        bastings near the end of the cooking time, place a pair of tongs under the full length of the center rib, and
-        gently lift the rack off the baking sheet. If the ends of the rack droop, the ribs are nearly done. If the rack
-        remains stiff, the ribs need more cooking time, and if the rack breaks in the center and falls apart, they are
-        overcooked.</p>
-    <p>The video shows an easy way to remove the membrane from the bone side of a rack of ribs, an optional step I
-        rarely take, but I did for this recipe. </p>
-    <p>Feel free to try other flavors of soda with this recipe, like root beer or ginger ale.</p>
+                    <tr class="table-row">
+                        <td class="step">Step 8</td>
+                        <td class="step-description">While meat is cooking, add any remaining wet rub to the juices in
+                            the saucepan, then add the 1 1/2 cups
+                            cherry cola, ketchup, and 1/4 teaspoon freshly ground black pepper.</td>
+                    </tr>
+                    <tr class="table-row">
+                        <td class="step">Step 9</td>
+                        <td class="step-description">Bring to a simmer on medium high, cook until liquid is reduced by
+                            half. Reduce heat further, and simmer
+                            liquids very slowly until they eventually thicken and become sauce-like. Once it is the
+                            thickness of
+                            barbecue sauce, remove from heat entirely.</td>
+                    </tr>
+                    <tr class="table-row">
+                        <td class="step">Step 10</td>
+                        <td class="step-description">After one hour at 250&deg;F (120&deg;C), remove ribs from
+                            the oven, and open out the foil, pressing
+                            foil flat to line the pan.</td>
+                    </tr>
+                    <tr class="table-row">
+                        <td class="step">Step 11</td>
+                        <td class="step-description">Turn the oven temperature up to 300&deg;F (150&deg;C).</td>
+                    </tr>
+                    <tr class="table-row">
+                        <td class="step">Step 12</td>
+                        <td class="step-description">Brush ribs with sauce. Return ribs to the oven for 15 minutes.
+                            Repeat this process, brushing ribs with sauce
+                            every 15 minutes, until ribs are tender and come easily off the bone, about 1 hour more.
+                            (See Note) (150&deg;C).</td>
+                    </tr>
+                    <tr class="table-row">
+                        <td class="step">Step 13</td>
+                        <td class="step-description">Let ribs rest for about 10 minutes. Slice between each rib with a
+                            sharp knife, and serve with extra sauce.</td>
+                    </tr>
+                </tbody>
+            </table>
 
-    <!-- Other page -->
-    <br>
-    <h4 class="subtitle">Check out more recipies</h4>
-    <ul>
-        <li><a href="American_Potato-Salad.html">American Potato Salad</a></li>
-        <li><a href="No-Bake_Cheesecake.html">No-Bake Cheesecake</a></li>
-    </ul>
-    <a href="../index.html">Home</a>
+            <div class="step-images">
+                <img src="../Assets/images/Cheri-Cola_Ribs/1371587432848.jpeg" alt="" srcset="">
+                <img src="../Assets/images/Cheri-Cola_Ribs/1351632253121.jpeg" alt="" srcset="">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- cooks notes -->
+    <section class="notes">
+        <div class="wrapper fade-in">
+            <h4 class="subtitle"><em>Cook's Notes</em></h4>
+            <p class="text">Here’s a trick for telling whether your ribs are done that I learned from an old pitmaster.
+                During one of the
+                bastings near the end of the cooking time, place a pair of tongs under the full length of the center
+                rib,
+                and
+                gently lift the rack off the baking sheet. If the ends of the rack droop, the ribs are nearly done. If
+                the
+                rack
+                remains stiff, the ribs need more cooking time, and if the rack breaks in the center and falls apart,
+                they
+                are
+                overcooked.</p>
+            <p class="text">The video shows an easy way to remove the membrane from the bone side of a rack of ribs, an
+                optional step
+                I
+                rarely take, but I did for this recipe. </p>
+            <p class="text">Feel free to try other flavors of soda with this recipe, like root beer or ginger ale.</p>
+
+        </div>
+    </section>
+
+
+    <!-- next recipes page -->
+    <section class="more-recipes ">
+        <div class="wrapper fade-in">
+            <h4 class="subtitle">Check out more recipes</h4>
+            <div class="more-col">
+                <div class="next-recipe">
+                    <a href=""><abbr title="American Potato Salad"><img
+                                src="../Assets/images/AmericanPotatoSalad/AmericanPotatoSalad.webp" alt=""
+                                srcset=""></abbr></a>
+                </div>
+                <div class="next-recipe">
+                    <a href="">
+                        <abbr title="No Bake Cheesecake"><img
+                                src="../Assets/images/No-Break_Cheesecake/Flag-Cake-with-Cheesecake-Topping-25-500x500.jpg"
+                                alt="" srcset="">
+                        </abbr>
+                    </a>
+                </div>
+            </div>
+            <div class="more-col">
+
+            </div>
+        </div>
+    </section>
+
+    <!-- social buttons -->
+    <section class="socials ">
+        <div class="social-wrapper">
+            <a href="">Instagram</a>
+            <a href="">Facebook</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-wrapper fade-in">
+            <div>&copy; 2023 - Odin Recipes</div>
+            <div>
+                <a href="https://github.com/nmcleon">Noah </a>
+                &sext;
+                <a href="https://github.com/octocatblain">Blain</a>
+            </div>
+        </div>
+    </footer>
 
 
 </body>

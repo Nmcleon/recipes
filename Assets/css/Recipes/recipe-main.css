@@ -139,6 +139,7 @@ section:nth-child(even) {
 /*=========================== images column=========================== */
 
 .images-col {
+  padding-top: 20px;
   display: inline-flex;
   flex-wrap: wrap;
   align-items: center;
@@ -153,7 +154,7 @@ section:nth-child(even) {
   }
 
   img:hover {
-    transform: scale(1.1) translateY(-20px);
+    transform: scale(1.1) translateY(-10px);
     transition: all 500ms ease;
   }
 }
@@ -201,7 +202,7 @@ section:nth-child(even) {
 /*===================================== table =====================================*/
 .table-row {
   height: 100px;
-  border-bottom: 2px solid black; /* Not working: will debug*/
+  border-bottom: 1px solid black;
 }
 
 .step {
@@ -218,6 +219,7 @@ section:nth-child(even) {
   display: flex;
   justify-content: center;
   gap: 20px;
+  padding-top: 20px;
 
   img {
     width: 200px;
