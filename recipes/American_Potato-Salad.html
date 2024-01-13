@@ -4,70 +4,214 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>American Potato Salad</title>
 
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- bootstrap CSS-CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!--Main css -->
+    <!-- <link rel="stylesheet" href="./Assets/css/main.css"> -->
+
+    <!-- header and footer css -->
+    <link rel="stylesheet" href="../Assets/css/recipe-header.css">
+
+    <!-- recipe page css -->
     <link rel="stylesheet" href="../Assets/css/Recipes/recipe-main.css">
+    <link rel="stylesheet" href="../Assets/css/Recipes/american_potatoe.css">
+
+    <title>American Potato Salad</title>
 </head>
 
 <body>
-    <!-- home link -->
-    <div style="text-align: center;">
-        <a href="../index.html">ODIN RECIPIES</a>
-    </div>
+    <header>
 
-    <h1 class="title">American Potato Salad</h1>
+        <!-- navigation -->
+        <!-- <nav id="navbar">
+                <div class="logo">
+                    <img src="/Assets/images/logo.png" alt="logo">
+                </div>
+                <div class="menu-items">
+                    <a href="#">Home</a>
+                    <a href="/about.html">About</a>
+                    <a href="/contact.html">Contact</a>
+                    <a href="/recipes.html">Recipes</a>
+                </div>
+                <div class="nav-buttons">
+                    <button class="search"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                        </svg></button>
+                    <button class="language-selector">
+                        <select name="language" id="language">
+                            <option value="EN">EN</option>
+                            <option value="FR">FR</option>
+                            <option value="BR">BR</option>
+                        </select>
+                    </button>
+                </div>
+    
+            </nav> -->
+    </header>
 
-    <!-- img of finished dish -->
-    <img class="hero-image" src="../images/AmericanPotatoSalad.webp" alt="American Potato Salad">
+    <section class="hero">
+        <div class="overlay"></div>
+        <h1 class="title">American Potato Salad</h1>
+    </section>
+
 
     <!--Description -->
-    <h2 class="subtitle">Description</h2>
-    <p class="text">Just a good old fashioned, down home potato salad recipe that brings back memories of picnics in the
-        park and
-        family gatherings. Wonderful as it is or make it your own by adding additional ingredients of your choice.</p>
+    <section class="description">
+        <div class="wrapper fade-in">
+            <div class="col">
+                <h2 class="subtitle">Description</h2>
+                <p class="text">Just a good old fashioned, down home potato salad recipe that brings back memories of
+                    picnics in
+                    the
+                    park and
+                    family gatherings. Wonderful as it is or make it your own by adding additional ingredients of your
+                    choice.
+                </p>
+            </div>
+
+            <div class="col images-col">
+                <img src="../Assets/images/AmericanPotatoSalad/4531318_AmericanPotatoSalad2x1-db351aab16d84a54813d82b0c8298029.jpg"
+                    alt="" srcset="">
+
+                <img src="../Assets/images/AmericanPotatoSalad/554062-c4c64c47afe44c2db4ded88d17189ebd.jpg" alt=""
+                    srcset="">
+                <img src="../Assets/images/AmericanPotatoSalad/AmericanPotatoSalad.webp_2.webp" alt="" srcset="">
+                <img src="../Assets/images/AmericanPotatoSalad/Classic-American-Potato-Salad-Process-Shots-4-1.jpg"
+                    alt="" srcset="">
+                <img src="../Assets/images/AmericanPotatoSalad/classic-potato-salad-index-6425b6f9bd7d2.jpg" alt=""
+                    srcset="">
+
+            </div>
+        </div>
+    </section>
 
     <!-- Unordered list of ingredients -->
-    <h3 class="subtitle">Ingredients</h3>
-    <ul class="text">
-        <li>5 pounds red potatoes</li>
-        <li>6 eggs</li>
-        <li>2 cups mayonnaise</li>
-        <li>1 onion, diced</li>
-        <li>2 green onions, thinly sliced</li>
-        <li>1 small green bell pepper, seeded and diced</li>
-        <li>3 stalks celery, thinly sliced</li>
-        <li>2 teaspoons salt</li>
-        <li>1 teaspoon ground black pepper</li>
-    </ul>
+    <section class="ingredients ">
+        <div class="wrapper fade-in">
+            <h3 class="subtitle">Ingredients</h3>
+            <div class="cards">
+                <div class="card">
+                    <ul>
+                        <li>5 pounds red potatoes</li>
+                        <li>6 eggs</li>
+                        <li>2 cups mayonnaise</li>
+                        <li>1 onion, diced</li>
+                        <li>2 green onions, thinly sliced</li>
+                        <li>1 small green bell pepper, seeded and diced</li>
+                        <li>3 stalks celery, thinly sliced</li>
+                        <li>2 teaspoons salt</li>
+                        <li>1 teaspoon ground black pepper</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <!-- Ordered list of Steps to follow -->
-    <h3 class="subtitle">Steps</h3>
-    <ol>
-        <li>Step 1</li>
-        <p class="text">Bring a large pot of water to a boil. Add potatoes, and cook for 15 to 20 minutes, or until
-            tender but still
-            firm. Drain, cool and cut into cubes.</p>
-        <li>Step 2</li>
-        <p class="text">Place eggs in a saucepan and cover with cold water. Bring water to a boil and immediately remove
-            from heat.
-            Cover and let eggs stand in hot water for 10 to 12 minutes. Remove from hot water, cool, peel and chop.</p>
-        <li>Step 3</li>
-        <p class="text">In a large bowl, combine chopped potatoes and eggs. Mix together mayonnaise, chopped onion,
-            green onion,
-            green pepper, and celery. Season with salt and pepper, then mix well. Cover, and refrigerate for several
-            hours or overnight.</p>
-    </ol>
 
-    <img src="../images/AmericanPotatoSalad.webp_2.webp" alt="Finished product ">
+    <section class="steps ">
+        <div class="wrapper fade-in">
+            <h3 class="subtitle">Steps</h3>
 
-    <!-- Other page -->
-    <br>
-    <h4 class="subtitle">Check out more recipes</h4>
-    <ul>
-        <li><a href="No-Bake_Cheesecake.html">No-Bake Cheesecake</a></li>
-        <li><a href="Chef-John's_ Cherry_Cola_Ribs.html">Cherry Cola Ribs</a></li>
-    </ul>
-    <a href="../index.html">Home</a>
+            <table>
+
+                <tbody>
+                    <tr class="table-row">
+                        <td class="step">Step 1</td>
+                        <td class="step-description">Bring a large pot of water to a boil. Add potatoes, and cook for 15
+                            to 20 minutes,
+                            or until
+                            tender but still
+                            firm. Drain, cool and cut into cubes.</td>
+                    </tr>
+                    <tr class="table-row">
+                        <td class="step">Step 2</td>
+                        <td class="step-description">Place eggs in a saucepan and cover with cold water. Bring water to
+                            a boil and
+                            immediately
+                            remove
+                            from heat.
+                            Cover and let eggs stand in hot water for 10 to 12 minutes. Remove from hot water, cool,
+                            peel
+                            and chop.</td>
+                    </tr>
+                    <tr class="table-row">
+                        <td class="step">Step 3</td>
+                        <td class="step-description">In a large bowl, combine chopped potatoes and eggs. Mix together
+                            mayonnaise, chopped
+                            onion,
+                            green onion,
+                            green pepper, and celery. Season with salt and pepper, then mix well. Cover, and refrigerate
+                            for
+                            several
+                            hours or overnight.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="step-images">
+                <img src="../Assets/images/AmericanPotatoSalad/image.webp" alt="" srcset="">
+                <img src="../Assets/images/AmericanPotatoSalad/southern-potato-salad-feature-image-1200x1200-copy.jpg"
+                    alt="" srcset="">
+            </div>
+        </div>
+    </section>
+
+    <!-- more recipes section -->
+
+    <section class="more-recipes ">
+        <div class="wrapper fade-in">
+            <h4 class="subtitle">Check out more recipes</h4>
+            <div class="more-col">
+                <div class="next-recipe">
+                    <a href=""><abbr title="No Bake Cheesecake"><img
+                                src="../Assets/images/No-Break_Cheesecake/No-Bake Cheesecake Flag Cake.webp" alt=""
+                                srcset=""></abbr></a>
+                </div>
+                <div class="next-recipe">
+                    <a href="">
+                        <abbr title="Cherry Cola Ribs"><img src="../Assets/images/Cheri-Cola_Ribs/image.webp" alt=""
+                                srcset="">
+                        </abbr>
+                    </a>
+                </div>
+            </div>
+            <div class="more-col">
+
+            </div>
+        </div>
+    </section>
+
+    <!-- social buttons -->
+    <section class="socials ">
+        <div class="social-wrapper">
+            <a href="">Instagram</a>
+            <a href="">Facebook</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-wrapper fade-in">
+            <div>&copy; 2023 - Odin Recipes</div>
+            <div>
+                <a href="https://github.com/nmcleon">Noah </a>
+                &sext;
+                <a href="https://github.com/octocatblain">Blain</a>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

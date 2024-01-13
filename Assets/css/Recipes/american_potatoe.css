@@ -1,1 +1,6 @@
-@import url("/Assets/css/main.css");
+.hero {
+  background: linear-gradient(to right, black, transparent),
+    url("../../images/AmericanPotatoSalad/4531318_AmericanPotatoSalad2x1-db351aab16d84a54813d82b0c8298029.jpg");
+  object-fit: cover;
+  background-repeat: no-repeat;
+}
