@@ -32,6 +32,43 @@ body {
   scroll-behavior: smooth;
 }
 
+/* =========== scrollbar===========  */
+/* width */
+::-webkit-scrollbar {
+  width: 7.5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--primary-clr);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--alt--text-clr);
+  border-radius: 50px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary-clr);
+}
+
+/* ===========keyframes=========== */
+
+@keyframes fade-in {
+  to {
+    scale: 1;
+  }
+}
+
+.fade-in {
+  animation: fade-in linear forwards;
+  animation-timeline: view();
+  animation-range-start: cover;
+  animation-range-end: 500px;
+}
+
 /* =====Typography===== */
 
 h1 {
