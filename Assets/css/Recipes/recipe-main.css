@@ -31,18 +31,18 @@ body {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: black;
+  background: var(--primary-clr);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: lime;
+  background: var(--alt-text-clr);
   border-radius: 50px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: white;
+  background: var(--secondary-clr);
 }
 
 /* ===========keyframes=========== */
