@@ -2,8 +2,8 @@
   --main-bg-clr: #ffffff;
   --dark-bg-clr: #000000;
   --light-bg-clr: #999999;
-  --ribbon-bg-clr-1: rgba(176, 14, 47, 1) 0%;
-  --ribbon-bg-clr-2: rgba(201, 37, 53, 1) 100%;
+  --ribbon-bg-clr-1: rgba(176, 14, 47, 0.8);
+  --ribbon-bg-clr-2: rgba(201, 37, 53, 1);
 
   --primary-clr: #000000;
   --secondary-clr: #ffffff;
