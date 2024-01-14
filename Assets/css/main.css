@@ -10,8 +10,8 @@
   --alt--text-clr: rgba(201, 37, 53, 1);
 
   --text-color: #000000;
-  --h1-color: rgba(201, 37, 53, 1);
-  --h2-color: rgba(201, 37, 53, 1);
+  --h1-clr: rgba(201, 37, 53, 1);
+  --h2-clr: rgba(201, 37, 53, 1);
 
   --btn-bg-clr: rgba(176, 14, 47, 1);
 
@@ -40,10 +40,12 @@ h1 {
   line-height: 1.2;
 }
 
-h2 {
+/*  all h2s  */
+.subtitle {
   font-size: 2.5rem;
   font-weight: 600;
   line-height: 1.2;
+  color: var(--h2-clr);
 }
 
 h3 {
@@ -94,4 +96,14 @@ a {
   }
 }
 
-/* =====responsive===== */
+/* ===== containers and rows===== */
+
+.container {
+  margin: auto 6.25rem;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
