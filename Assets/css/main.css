@@ -1,15 +1,19 @@
 :root {
-  --main-background-color: hsl(0, 0%, 100%);
-  --dark-background-color: hsl(0, 0%, 0%);
-  --light-background-color: hsl(0, 0%, 100%);
-  --primary-color: hsl(0, 0%, 100%);
-  --secondary-color: hsl(0, 0%, 0%);
-  --text-color: hsl(38, 100%, 60%);
-  --alt-text-color: hsl(205, 33%, 71%);
-  --h1-color: hsl(203, 99%, 37%);
-  --h2-color: hsl(205, 33%, 71%);
+  --main-bg-clr: #ffffff;
+  --dark-bg-clr: #000000;
+  --light-bg-clr: #999999;
+  --ribbon-bg-clr-1: rgba(176, 14, 47, 1) 0%;
+  --ribbon-bg-clr-2: rgba(201, 37, 53, 1) 100%;
 
-  --btn-color: hsl(50, 91%, 52%);
+  --primary-clr: #000000;
+  --secondary-clr: #ffffff;
+  --alt--text-clr: rgba(201, 37, 53, 1);
+
+  --text-color: #000000;
+  --h1-color: rgba(201, 37, 53, 1);
+  --h2-color: rgba(201, 37, 53, 1);
+
+  --btn-bg-clr: rgba(176, 14, 47, 1);
 
   --primary-font-family: "Inter", sans-serif;
   --secondary-font-family: "Playfair Display";
@@ -29,17 +33,7 @@ body {
 }
 
 /* =====Typography===== */
-/*
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  color: var(--alt-text-color);
-}
-*/
+
 h1 {
   font-size: 3rem;
   font-weight: 700;
