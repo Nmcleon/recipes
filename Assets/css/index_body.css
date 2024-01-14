@@ -43,9 +43,13 @@
   .ribbonContent {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center !important;
     color: var(--secondary-clr);
     gap: 15px; /*Adjust spacing between image and text*/
+
+    p {
+      margin-bottom: 0px !important;
+    }
   }
 }
 
