@@ -112,14 +112,13 @@
   align-items: center;
   justify-content: space-between;
   overflow: hidden;
-  transition: transform 200ms ease;
+  transition: all 500ms ease;
 
   .categories {
     position: absolute;
     display: flex;
     justify-content: flex-start;
     gap: 2px;
-    /* background-color: var(--light-bg-clr); */
     margin: 10px 10px auto 10px;
 
     p {
@@ -157,7 +156,7 @@
 
     .recipe-title {
       font-size: 1.25rem;
-      font-weight: 400;
+      font-weight: 600;
       color: #000000;
       text-align: center;
       transition: color 0.3s, text-decoration-color 0.3s;
@@ -167,27 +166,31 @@
 
 .card:hover {
   transform: translateY(-20px);
-  transition: transform 500ms ease;
+  transition: all 200ms ease;
+
+  img {
+    transform: scale(1.2);
+  }
+
+  /* Red underline on hover for recipe title */
+  .recipe-title {
+    text-decoration: underline;
+    text-decoration-color: var(--btn-bg-clr);
+  }
+
+  .recipe-link {
+    box-shadow: 0px 0px 20px var(--btn-bg-clr);
+  }
 }
 
-.card:hover .card-image img {
-  transform: scale(1.2);
-}
-
-/* Red underline on hover for recipe title */
-.section-one .container .row .card:hover .card-text .recipe-title {
-  text-decoration: underline;
-  text-decoration-color: rgba(176, 14, 47, 1);
-  /*color: rgba(176, 14, 47, 1); */
-}
-
-.section-one .container .row .card .card-text .recipe-description {
-  font-size: 0.8rem;
+.recipe-description {
+  font-size: 0.9rem;
+  /* font-weight: 500; */
   text-align: center;
-  color: #202020;
+  color: var(--primary-clr);
 }
 
-.section-one .container .row .card .card-text .recipe-link {
+.recipe-link {
   position: relative;
   overflow: hidden;
   display: flex;
@@ -200,53 +203,18 @@
   color: var(--secondary-color);
   text-decoration: none;
   background-color: transparent;
-  border: 2px solid rgba(176, 14, 47, 1);
+  border: 2px solid var(--btn-bg-clr);
   border-radius: 5px;
+  box-shadow: inset 0px 0px 10px var(--btn-bg-clr);
   outline: none;
-  transition: background-color 0.3s, color 0.3s;
+  transition: all 500ms ease;
 }
 
-.section-one .container .row .card .recipe-link:hover {
-  /* background-color: #495e57; */
-  /*box-shadow: 0 0 10px var(--btn-color), 0 0 10px var(--btn-color);*/
-  background-color: rgba(176, 14, 47, 1);
-  color: #ffff;
+.recipe-link:hover {
+  background-color: var(--btn-bg-clr);
+  color: var(--secondary-clr);
   text-decoration: underline;
   border: none;
   font-weight: 700;
-}
-
-.section-one .container .row .card .recipe-link:active {
-  /* color: #666; */
-  box-shadow: 6px 6px 12px var(--btn-color), -6px -6px 12px var(--btn-color);
-}
-
-.section-one .container .row .card .recipe-link:before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%) scaleY(1) scaleX(1.25);
-  top: 100%;
-  width: 140%;
-  height: 180%;
-  background-color: rgba(0, 0, 0, 0.05);
-  border-radius: 50%;
-  display: block;
-  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
-  z-index: -1;
-}
-
-.section-one .container .row .card .recipe-link:after {
-  content: "";
-  position: absolute;
-  left: 55%;
-  transform: translateX(-50%) scaleY(1) scaleX(1.45);
-  top: 180%;
-  width: 160%;
-  height: 190%;
-  background-color: #495e57;
-  border-radius: 50%;
-  display: block;
-  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
-  z-index: -1;
+  transition: all 200ms ease;
 }
