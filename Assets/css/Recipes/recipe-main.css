@@ -1,7 +1,7 @@
 :root {
   --heading-clr: red;
   --p-clr: black;
-  --alt-p-clr: orange;
+  --alt-p-clr: rgb(100, 100, 100);
 
   --main-bg: white;
   --alt-bg: rgb(230, 230, 230);
@@ -74,8 +74,8 @@ body {
 
 .subtitle {
   font-size: 2rem;
-  font-weight: 500;
-  color: var(--heading-clr);
+  font-weight: 700;
+  color: var(--primary-color);
   padding-bottom: 20px;
   text-align: center;
 }
@@ -128,15 +128,17 @@ section:nth-child(even) {
   width: 180px;
   height: 180px;
   border: 10px solid var(--heading-clr);
-
+  opacity: 0.3;
   position: absolute;
   top: 200px;
   left: 50px;
-
   z-index: 0;
 }
 
 /*=========================== images column=========================== */
+.description .col {
+  scale: 0.8;
+}
 
 .images-col {
   padding-top: 20px;
@@ -145,6 +147,7 @@ section:nth-child(even) {
   align-items: center;
   justify-content: center;
   gap: 20px;
+  scale: 0.8;
 
   img {
     width: 200px;
@@ -166,6 +169,7 @@ section:nth-child(even) {
   justify-content: space-evenly;
   gap: 20px;
   align-items: center;
+  scale: 0.8;
 }
 
 .card-title {
@@ -185,8 +189,9 @@ section:nth-child(even) {
 }
 
 .card ul {
-  list-style-type: decimal;
+  list-style-type: circle;
   padding-left: 20px;
+  font-weight: 500;
 }
 
 .card:hover {
@@ -202,6 +207,7 @@ section:nth-child(even) {
 /*===================================== table =====================================*/
 .table-row {
   height: 100px;
+  scale: 0.8;
   border-bottom: 1px solid black;
 }
 
@@ -215,28 +221,32 @@ section:nth-child(even) {
   font-size: 1.25rem;
 }
 
-.step-images {
+.share-recipe {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 20px;
+  color: var(--alt-p-clr);
+  font-size: 1.25rem;
+  scale: 0.8;
   padding-top: 20px;
 
-  img {
-    width: 200px;
-    height: 200px;
-    gap: 50px;
-    border-radius: 50%;
-    transition: all 200ms ease;
+  button {
+    background-color: var(--heading-clr);
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    height: 50px;
+    width: 50px;
   }
-
-  img:hover {
-    transform: scale(1.1) translateY(20px);
-    transition: all 500ms ease;
-  }
+  /* p {
+    color: var(--alt-p-clr);
+    font-size: 1.25rem;
+  } */
 }
 
 hr {
-  border-top: 0.5px solid var(--primary-color);
+  border-top: 1px solid var(--primary-color);
   margin: auto 100px;
 }
 
@@ -244,7 +254,9 @@ hr {
 
 .more-col {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 50px;
+  scale: 0.8;
 }
 
 .next-recipe {
@@ -258,6 +270,86 @@ hr {
   img:hover {
     transform: translate(50px);
     transition: all 500ms ease;
+  }
+}
+
+.next-recipe-name {
+  padding: 50px 0 50px 0;
+
+  p {
+    color: var(--alt-p-clr);
+    font-size: 1.5rem;
+    padding-bottom: 0px;
+  }
+
+  a {
+    color: var(--primary-color);
+    font-size: 1.75rem;
+    font-weight: 600;
+
+    .arrow {
+      color: var(--heading-clr);
+      font-size: 2.5rem;
+    }
+  }
+}
+
+/* ============ newsletter ============= */
+
+.newsletter {
+  margin-top: 50px;
+  background: linear-gradient(to bottom, black, transparent),
+    url("../../images/23-min.jpg");
+  object-fit: fill;
+  background-repeat: no-repeat;
+  border-top-left-radius: 1000rem;
+  border-top-right-radius: 1000rem;
+  background-position-y: bottom;
+}
+
+.newsletter-wrapper {
+  margin: auto 100px;
+  padding: 100px;
+  scale: 0.8;
+}
+
+.newsletter-title {
+  font-size: 4rem;
+  text-align: center;
+  color: var(--secondary-color);
+}
+
+.newsletter-text {
+  font-size: 2rem;
+  text-align: center;
+  color: var(--secondary-color);
+}
+
+.input {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  input[type="text"] {
+    border-radius: 50px;
+    padding: 20px;
+    width: 500px;
+    outline: none;
+    border: none;
+    font-size: 1.5rem;
+  }
+
+  button {
+    background-color: crimson;
+    color: white;
+    border-radius: 50px;
+    padding: 20px;
+    font-size: 1.5rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transform: translateX(-70px);
   }
 }
 
@@ -276,7 +368,12 @@ hr {
 
   a {
     padding-right: 20px;
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
+    color: black;
+    flex: 1;
+    /* display: inline-flex; */
+    /* display: flex; */
+    /* justify-content: center; */
   }
 }
 
