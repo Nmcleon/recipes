@@ -5,7 +5,8 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  background: none;
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
   z-index: 1000;
   transition: 0.5s;
 }
@@ -14,19 +15,20 @@ header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 100px 20px 100px;
-  transition: 0.5s;
+  padding: 1.3rem 10%;
+  transition: all 500ms ease;
 }
 
 header nav.scrolled {
-  background: rgba(30, 30, 30, 0.50);
-  padding: 5px 100px 5px 100px;
-  backdrop-filter: blur(4px);
+  background: rgba(30, 30, 30, 0.5);
+  padding: 0.3rem 10%;
+  backdrop-filter: none;
   -webkit-backdrop-filter: blur(4px);
+  transition: all 200ms ease;
 }
 
 header nav.scrolled .menu-items a {
-  color: white;
+  color: var(--secondary-clr);
 }
 
 header nav .logo img {
@@ -43,11 +45,38 @@ header nav .menu-items {
 }
 
 header nav .menu-items a {
-  color: var(--primary-color);
+  color: var(--secondary-clr);
   text-decoration: none;
   list-style: none;
   padding: 0 20px;
   font-weight: 600;
+}
+
+header nav .menu-items a {
+  position: relative;
+}
+
+header nav .menu-items a:hover {
+  text-decoration: none;
+  position: relative;
+}
+
+header nav .menu-items a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -3px;
+  left: 0;
+  background-color: var(--alt--text-clr);
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease;
+}
+
+header nav .menu-items a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 /* ===buttons=== */
@@ -67,7 +96,7 @@ header nav .nav-buttons button {
 }
 
 header nav .nav-buttons .search {
-  color: var(--primary-color);
+  color: var(--secondary-clr);
   background: none;
   border-radius: 50%;
   width: 25px;
@@ -76,7 +105,7 @@ header nav .nav-buttons .search {
 }
 
 header nav.scrolled .nav-buttons .search {
-  color: black;
+  color: var(--secondary-clr);
   background-color: transparent;
   border: none;
   border-radius: 50%;
@@ -85,7 +114,7 @@ header nav.scrolled .nav-buttons .search {
 /* language selector button */
 
 header nav .nav-buttons .language-selector {
-  color: var(--primary-color);
+  color: var(--secondary-clr);
   background: transparent;
   border-radius: 50%;
   width: 25px;
@@ -99,7 +128,7 @@ header nav .nav-buttons .language-selector select {
   height: 25px;
   background: transparent;
   font-weight: 600;
-  color: var(--primary-color);
+  color: var(--secondary-clr);
 
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -111,7 +140,7 @@ header nav .nav-buttons .language-selector select > datalist {
 }
 
 header nav .nav-buttons .language-selector select option {
-  color: var(--secondary-color);
+  color: var(--secondary-clr);
   font-size: small;
   font-weight: 600;
   background: transparent;
@@ -120,11 +149,11 @@ header nav .nav-buttons .language-selector select option {
 
 header nav.scrolled .nav-buttons .language-selector {
   background-color: transparent;
-  color: var(--secondary-color);
+  color: var(--secondary-clr);
   border: none;
   outline: none;
 }
 
 header nav.scrolled .nav-buttons .language-selector select {
-  color: var(--secondary-color);
+  color: var(--secondary-clr);
 }
