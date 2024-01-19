@@ -1,4 +1,4 @@
-@import url("recipe-main.css");
+/* @import url("recipe-main.css");
 
 header {
   position: fixed;
@@ -35,7 +35,7 @@ header nav .logo img {
 
 /* menu */
 
-header nav .menu-items {
+/* header nav .menu-items {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -48,12 +48,12 @@ header nav .menu-items a {
   list-style: none;
   padding: 0 20px;
   font-weight: 600;
-}
+} */
 
 /* ===buttons=== */
 
 /* search */
-header nav .nav-buttons {
+/* header nav .nav-buttons {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -80,10 +80,10 @@ header nav.scrolled .nav-buttons .search {
   background-color: transparent;
   border: none;
   border-radius: 50%;
-}
+} */
 
 /* language selector button */
-
+/* 
 header nav .nav-buttons .language-selector {
   color: var(--primary-color);
   background: transparent;
@@ -114,9 +114,9 @@ header nav .nav-buttons .language-selector select option {
   color: var(--secondary-color);
   font-size: small;
   font-weight: 600;
-  background: transparent;
-  /* outline: none; */
-}
+  background: transparent; */
+/* outline: none; */
+/* }
 
 header nav.scrolled .nav-buttons .language-selector {
   background-color: transparent;
@@ -127,4 +127,4 @@ header nav.scrolled .nav-buttons .language-selector {
 
 header nav.scrolled .nav-buttons .language-selector select {
   color: var(--secondary-color);
-}
+} */
