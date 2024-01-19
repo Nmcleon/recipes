@@ -1,6 +1,6 @@
 .hero {
   background: linear-gradient(to right, black, transparent),
-    url("../../images/american-potato-salad/aps-hero.png");
-  object-fit: cover;
+    url("../../images/american-potato-salad/aps-hero.jpg");
+  object-fit: fill;
   background-repeat: no-repeat;
 }
