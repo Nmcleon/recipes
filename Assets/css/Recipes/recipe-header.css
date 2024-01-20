@@ -1,11 +1,12 @@
-@import url("recipe-main.css");
+@import url("./recipe-main.css");
 
 header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background: none;
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
   z-index: 1000;
   transition: 0.5s;
 }
@@ -14,19 +15,20 @@ header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 100px 20px 100px;
-  transition: 0.5s;
+  padding: 1.3rem 10%;
+  transition: all 500ms ease;
 }
 
 header nav.scrolled {
   background: rgba(30, 30, 30, 0.5);
-  padding: 5px 100px 5px 100px;
-  backdrop-filter: blur(4px);
+  padding: 0.3rem 10%;
+  backdrop-filter: none;
   -webkit-backdrop-filter: blur(4px);
+  transition: all 200ms ease;
 }
 
 header nav.scrolled .menu-items a {
-  color: white;
+  color: var(--secondary-color);
 }
 
 header nav .logo img {
@@ -43,11 +45,38 @@ header nav .menu-items {
 }
 
 header nav .menu-items a {
-  color: var(--primary-color);
+  color: var(--secondary-color);
   text-decoration: none;
   list-style: none;
   padding: 0 20px;
   font-weight: 600;
+}
+
+header nav .menu-items a {
+  position: relative;
+}
+
+header nav .menu-items a:hover {
+  text-decoration: none;
+  position: relative;
+}
+
+header nav .menu-items a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -3px;
+  left: 0;
+  background-color: var(--alt-p-clr);
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease;
+}
+
+header nav .menu-items a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 /* ===buttons=== */
@@ -67,7 +96,7 @@ header nav .nav-buttons button {
 }
 
 header nav .nav-buttons .search {
-  color: var(--primary-color);
+  color: var(--secondary-color);
   background: none;
   border-radius: 50%;
   width: 25px;
@@ -76,7 +105,7 @@ header nav .nav-buttons .search {
 }
 
 header nav.scrolled .nav-buttons .search {
-  color: black;
+  color: var(--secondary-color);
   background-color: transparent;
   border: none;
   border-radius: 50%;
@@ -85,7 +114,7 @@ header nav.scrolled .nav-buttons .search {
 /* language selector button */
 
 header nav .nav-buttons .language-selector {
-  color: var(--primary-color);
+  color: var(--secondary-color);
   background: transparent;
   border-radius: 50%;
   width: 25px;
@@ -99,7 +128,7 @@ header nav .nav-buttons .language-selector select {
   height: 25px;
   background: transparent;
   font-weight: 600;
-  color: var(--primary-color);
+  color: var(--secondary-color);
 
   -webkit-appearance: none;
   -moz-appearance: none;

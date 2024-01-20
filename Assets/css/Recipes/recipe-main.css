@@ -120,7 +120,7 @@ section:nth-child(even) {
 .hero {
   min-height: 100dvh;
   position: relative;
-  object-fit: cover;
+  /* object-fit: cover; */
   z-index: -1;
 }
 
@@ -238,6 +238,11 @@ section:nth-child(even) {
     border: none;
     height: 50px;
     width: 50px;
+
+    svg {
+      font-weight: 800;
+      font-size: larger;
+    }
   }
   /* p {
     color: var(--alt-p-clr);
@@ -374,24 +379,5 @@ hr {
     /* display: inline-flex; */
     /* display: flex; */
     /* justify-content: center; */
-  }
-}
-
-/* =====footer section===== */
-
-footer {
-  background-color: var(--dark-bg-clr);
-  color: var(--secondary-color);
-  height: 100px;
-
-  .footer-wrapper {
-    margin: auto 100px;
-    padding-top: 40px;
-    display: flex;
-    justify-content: space-between;
-
-    a {
-      color: var(--secondary-color);
-    }
   }
 }

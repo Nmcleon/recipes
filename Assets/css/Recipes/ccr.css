@@ -1,0 +1,5 @@
+.hero {
+  background: url("../../images/cherry-cola-ribs/ccr-hero.png");
+  object-fit: cover;
+  background-repeat: no-repeat;
+}
