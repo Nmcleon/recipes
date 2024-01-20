@@ -1,4 +1,4 @@
-@import url("/Assets/css/main.css");
+@import url("./recipe-main.css");
 
 footer {
   background: rgba(0, 0, 0, 0.9);
@@ -112,12 +112,11 @@ footer .footer-container .social-icons .socialContainer:hover .socialSvg {
 }
 
 footer .footer-container hr {
-  color: var(--alt-text-color);
-  font-weight: 200;
+  border-top: 2px solid var(--alt-p-clr);
 }
 
 footer .footer-container .row.copyright {
-  padding: 0;
+  padding-block: 20px;
 }
 
 footer .footer-container .row .copyright {
@@ -136,7 +135,7 @@ footer .footer-container .row .copyright .company p {
 
 footer .footer-container .row .copyright .authors {
   font-size: smaller;
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 footer .footer-container .row .copyright .authors a {
@@ -184,7 +183,7 @@ footer .footer-container .row .authors .author-tooltip .tooltip-text::after {
   margin-left: -5px;
   border-width: 5px;
   border-style: solid;
-  border-color: var(--dark-background-color) transparent transparent transparent;
+  border-color: var(--dark-bg-clr) transparent transparent transparent;
 }
 
 footer .footer-container .row .authors .author-tooltip:hover .tooltip-text {
