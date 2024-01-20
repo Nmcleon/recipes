@@ -1,6 +1,6 @@
 .hero {
   background: linear-gradient(to right, black, transparent),
-    url("../../images/No-Break_Cheesecake/No-Bake-Cheesecake-Flag-Cake-by-MommyTommie-2000-325e2f9d42d64078aa41399bcaf63f2c.jpg");
+    url("../../images/no-bake-cheesecake/nbc-hero.jpg");
   object-fit: cover;
   background-repeat: no-repeat;
 }
