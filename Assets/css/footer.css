@@ -37,6 +37,15 @@ footer .footer-container ul.footer-links li a {
   font-size: small;
 }
 
+footer .footer-container ul.footer-links li:hover {
+  transform: translateX(10px);
+}
+
+footer .footer-container ul.footer-links li:hover a {
+  color: var(--alt--text-clr);
+  font-weight: 700;
+}
+
 footer .footer-container .row div:first-child h2 > img {
   width: 150px;
   filter: contrast(2);
@@ -112,7 +121,7 @@ footer .footer-container .social-icons .socialContainer:hover .socialSvg {
 }
 
 footer .footer-container hr {
-  color: var(--alt-text-color);
+  color: var(--alt--text-clr);
   font-weight: 200;
 }
 
@@ -147,6 +156,7 @@ footer .footer-container .row .copyright .authors a {
 footer .footer-container .row .copyright .authors .author-tooltip {
   position: relative;
   display: inline-block;
+  color: white;
 }
 
 footer .footer-container .row .copyright .company p {

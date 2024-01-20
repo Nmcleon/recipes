@@ -37,6 +37,15 @@ footer .footer-container ul.footer-links li a {
   font-size: small;
 }
 
+footer .footer-container ul.footer-links li:hover {
+  transform: translateX(10px);
+}
+
+footer .footer-container ul.footer-links li:hover a {
+  color: var(--alt-text-clr);
+  font-weight: 700;
+}
+
 footer .footer-container .row div:first-child h2 > img {
   width: 150px;
   filter: contrast(2);

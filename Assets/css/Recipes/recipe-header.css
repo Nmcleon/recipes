@@ -68,7 +68,7 @@ header nav .menu-items a::after {
   height: 2px;
   bottom: -3px;
   left: 0;
-  background-color: var(--alt-p-clr);
+  background-color: var(--alt-text-clr);
   transform: scaleX(0);
   transform-origin: bottom right;
   transition: transform 0.3s ease;
