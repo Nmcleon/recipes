@@ -5,10 +5,44 @@
 	<meta charset="-8">
 	<title>About Us</title>
 	<link rel="stylesheet" href="./Assets/css/about_body.css">
+	<link rel="stylesheet" href="./Assets/css/header.css">
+	
 </head>
 
 <body>
-	<div class="main-section">
+	<header>
+
+        <!-- navigation -->
+        <nav id="navbar">
+            <div class="logo">
+                <img src="../Assets/images/logos/logo.png" alt="logo">
+            </div>
+            <div class="menu-items">
+                <a href="./index.html">Home</a>
+                <a href="#">About</a>
+                <a href="/contact.html">Contact</a>
+                <a href="/index.html/#recipes">Recipes</a>
+            </div>
+            <div class="nav-buttons">
+                <button class="search"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                    </svg></button>
+                <button class="language-selector">
+                    <select name="language" id="language">
+                        <option value="EN">EN</option>
+                        <option value="FR">FR</option>
+                        <option value="BR">BR</option>
+                    </select>
+                </button>
+            </div>
+
+        </nav>
+    </header>
+
+	<!--Main Section-->
+	<section class="main-section">
 		<div class="container">
 			<div class="container-section">
 				<div class="title">
@@ -30,6 +64,7 @@
 					<img src="./Assets/images/about/sebastien-marchand-oVIUvwm2dvM-unsplash.jpg">
 				</div>
 		</div>
+	</section>
 </body>
 
 </html>
