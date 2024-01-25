@@ -44,7 +44,7 @@
 /*hero section*/
 .hero {
 	min-height: 100vh;
-	background: url("../images/about/sebastien-marchand-oVIUvwm2dvM-unsplash.jpg");
+	background: url("../images/about/lidye-1Shk_PkNkNw-unsplash.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center right;
@@ -92,7 +92,7 @@
 	font-size: 28px;
 	line-height: 36px;
 	letter-spacing: -0.75px;
-	color: #fff;
+	color: var(--secondary-clr);
 }
 
 .cnt-section p {
@@ -104,10 +104,6 @@
 	animation-iteration-count: 1;
 	animation-direction: normal;
 	animation-fill-mode: both;
-	font-weight: normal;
-	font-size: 16px;
-	line-height: 24px;
-	color: #BDBDBD;
 }
 
 
@@ -120,10 +116,12 @@
 
 .cnt-section .content p {
 	margin-top: 10px;
-	font-family: sans-serif;
+	font-family: poppins;
+	font-weight: normal;
 	font-size: 18px;
-	font-size: 17px;
-	color: #feffff83;
+	font-size: 16px;
+	line-height: 24px;
+	color: #feffff85;
 }
 
 
